@@ -467,14 +467,3 @@
 		}
 	}
 }
-
-.has-animations {
-
-	.anime-element {
-		visibility: hidden;
-
-		.anime-ready & {
-			visibility: visible;
-		}
-	}
-}
