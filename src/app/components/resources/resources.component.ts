@@ -1,4 +1,7 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
+
+import { RESOURCES } from './data';
+import { Resource } from './resource.model';
 
 @Component({
   selector: 'app-resources',
@@ -6,11 +9,11 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   styleUrls: ['./resources.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ResourcesComponent implements OnInit {
+export class ResourcesComponent {
 
-  constructor() { }
+  resources$: Resource[] = [];
 
-  ngOnInit() {
+  constructor() {
+    this.resources$ = RESOURCES;
   }
-
 }
