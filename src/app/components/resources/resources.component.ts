@@ -15,5 +15,6 @@ export class ResourcesComponent {
 
   constructor() {
     this.resources$ = RESOURCES;
+    console.log(this.resources$);
   }
 }
