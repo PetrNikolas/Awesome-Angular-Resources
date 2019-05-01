@@ -11,10 +11,14 @@ import { Resource } from './resource.model';
 })
 export class ResourcesComponent {
 
-  resources$: Resource[] = [];
+  resources$: Resource[];
+  queryString;
 
   constructor() {
     this.resources$ = RESOURCES;
-    console.log(this.resources$);
+  }
+
+  trackByFn(index, item) {
+    return item.id;
   }
 }

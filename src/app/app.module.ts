@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 // Components
 import { AppComponent } from './app.component';
@@ -10,6 +11,9 @@ import { ResourcesComponent } from './components/resources/resources.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 
+// Pipes
+import { FilterdataPipe } from './pipes/filterdata.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,10 +22,12 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     HeroComponent,
     ResourcesComponent,
     NewsletterComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    FilterdataPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

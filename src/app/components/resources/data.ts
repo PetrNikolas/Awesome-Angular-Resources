@@ -281,65 +281,58 @@ export const RESOURCES = [
   },
   {
     id: 41,
-    title: '',
-    description: '',
-    link: '',
+    title: 'Angular 2+ Components & Libraries',
+    description: 'Catalog of Angular 2+ Components & Libraries',
+    link: 'https://github.com/brillout/awesome-angular-components',
     image: ''
   },
   {
     id: 42,
-    title: '',
-    description: '',
-    link: '',
+    title: 'Marley',
+    description: 'Modern Full-Stack !-> Angular 7+ and Node.js API <-! Starter Kit.',
+    link: 'https://getmarleyjs.com/',
     image: ''
   },
   {
     id: 43,
-    title: '',
-    description: '',
-    link: '',
+    title: 'ngX Starter Kit',
+    description: 'Angular 7+ starter kit for enterprise-grade projects',
+    link: 'https://github.com/ngx-rocket/starter-kit',
     image: ''
   },
   {
     id: 44,
-    title: '',
-    description: '',
-    link: '',
+    title: 'Angular Webpack Starter',
+    description: 'An Angular Starter kit featuring Angular',
+    link: 'https://github.com/PatrickJS/angular-starter',
     image: ''
   },
   {
     id: 45,
-    title: '',
-    description: '',
-    link: '',
+    title: 'Ultimate Courses',
+    description: 'Superb quality courses for web developers',
+    link: 'https://ultimatecourses.com/',
     image: ''
   },
   {
     id: 46,
-    title: '',
-    description: '',
-    link: '',
+    title: 'NGX Admin',
+    description: 'Admin dashboard template based on Angular 7+, Bootstrap 4',
+    link: 'http://akveo.github.io/ngx-admin/',
     image: ''
   },
   {
     id: 47,
-    title: '',
-    description: '',
-    link: '',
+    title: 'Akita',
+    description: 'State Management Tailored-Made for JS Applications',
+    link: 'https://netbasal.gitbook.io/akita/',
     image: ''
   },
   {
     id: 48,
-    title: '',
-    description: '',
-    link: '',
-    image: ''
-  },
-  {
-    id: 49,
-    title: '',
-    description: '',
-    link: '',
+    title: 'NGXS',
+    description: 'NGXS is a state management pattern + library for Angular',
+    link: 'https://ngxs.gitbook.io/ngxs/',
     image: ''
   },
 ];
