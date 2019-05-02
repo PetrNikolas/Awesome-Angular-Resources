@@ -3,15 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 // Components
 import { AppComponent } from './app.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { HeaderComponent } from './components/header/header.component';
-import { HeroComponent } from './components/hero/hero.component';
-import { ResourcesComponent } from './components/resources/resources.component';
-import { NewsletterComponent } from './newsletter/newsletter.component';
-import { TestimonialsComponent } from './testimonials/testimonials.component';
+import * as components from './components';
 
 // Pipes
-import { FilterdataPipe } from './pipes/filterdata.pipe';
+import * as pipes from './pipes';
 
 export const IMPORTS = [
   BrowserModule,
@@ -22,12 +17,12 @@ export const PROVIDERS = [];
 
 export const COMPONENTS = [
   AppComponent,
-  FooterComponent,
-  HeaderComponent,
-  HeroComponent,
-  ResourcesComponent,
-  NewsletterComponent,
-  TestimonialsComponent,
+  components.FooterComponent,
+  components.HeaderComponent,
+  components.HeroComponent,
+  components.ResourcesComponent,
+  components.NewsletterComponent,
+  components.TestimonialsComponent,
 ];
 
 export const ROOT_COMPONENT = [
@@ -35,5 +30,5 @@ export const ROOT_COMPONENT = [
 ];
 
 export const PIPES = [
-  FilterdataPipe
+  pipes.FilterdataPipe
 ];
