@@ -12,7 +12,7 @@ import { Resource } from '../../models/resource.model';
 export class ResourcesComponent {
 
   resources$: Resource[];
-  queryString;
+  queryString = '';
 
   constructor() {
     this.resources$ = RESOURCES;
