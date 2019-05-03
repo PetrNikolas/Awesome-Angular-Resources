@@ -11,12 +11,12 @@ import { Resource } from '../../models/resource.model';
 })
 export class ResourcesComponent {
 
-  protected readonly TYPE_ALL = 'all';
-  protected readonly TYPE_FRAMEWORK = 'framework';
-  protected readonly TYPE_LIB = 'lib';
-  protected readonly TYPE_TOOL = 'tool';
-  protected readonly TYPE_STARTER = 'starter';
-  protected readonly TYPE_OTHER = 'other';
+  readonly TYPE_ALL = 'all';
+  readonly TYPE_FRAMEWORK = 'framework';
+  readonly TYPE_LIB = 'lib';
+  readonly TYPE_TOOL = 'tool';
+  readonly TYPE_STARTER = 'starter';
+  readonly TYPE_OTHER = 'other';
 
   selectedTab = this.TYPE_ALL;
 
