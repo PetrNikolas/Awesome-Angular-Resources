@@ -6,7 +6,7 @@
             @include font-size(8, desktop, true, true, true);
         }
     }
-    color: color(typography, 3);
+    color: color(typography, 1i);
 	background-color: color(typography, 1);
 
 	&::before {
@@ -22,6 +22,7 @@
 
     a {
         @include anchor-aspect(footer);
+        color: color(typography, 1i);
     }
 }
 
