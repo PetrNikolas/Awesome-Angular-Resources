@@ -18,6 +18,14 @@ export class ResourcesComponent {
     this.resources$ = RESOURCES;
   }
 
+  getImage() {
+    return Math.floor(Math.random() * 4) + 1;
+  }
+
+  redirect(link: string) {
+    window.open(link, '_blank');
+  }
+
   trackByFn(index, item) {
     return item.id;
   }

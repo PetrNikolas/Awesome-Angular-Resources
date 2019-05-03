@@ -47,6 +47,7 @@
     height: 100%;
     background: color(bg, 1);
     padding: 48px 24px 72px;
+    cursor: pointer;
 
     &::before {
         content: '';
