@@ -7,7 +7,7 @@
 	}
 
     .section-title {
-        margin-bottom: 72px;
+        margin-bottom: 32px;
     }
 }
 
@@ -47,6 +47,7 @@
 }
 
 .testimonial {
+  cursor: pointer;
 	position: relative;
     padding: 44px 16px 16px;
 	width: 388px;
@@ -111,10 +112,7 @@
 			padding-bottom: 166px; /* 126+40px second column offset */
 		}
 
-	    .section-title {
-	        margin-bottom: 126px;
-	    }
-	}
+  }
 
 	.testimonials-wrap {
 		margin-right: -24px;

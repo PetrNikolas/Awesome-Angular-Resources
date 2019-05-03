@@ -22,7 +22,7 @@ export const COMPONENTS = [
   components.HeroComponent,
   components.ResourcesComponent,
   components.NewsletterComponent,
-  components.TestimonialsComponent,
+  components.PodcastsComponent,
 ];
 
 export const ROOT_COMPONENT = [
