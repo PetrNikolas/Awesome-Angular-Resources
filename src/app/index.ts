@@ -21,7 +21,6 @@ export const COMPONENTS = [
   components.HeaderComponent,
   components.HeroComponent,
   components.ResourcesComponent,
-  components.NewsletterComponent,
   components.PodcastsComponent,
 ];
 

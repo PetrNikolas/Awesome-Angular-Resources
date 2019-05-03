@@ -1,17 +1,6 @@
 .features {
 	position: relative;
 
-	&::before {
-		content: '';
-		width: 100%;
-		height: 400px;
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		background: color(bg, 2);
-		background: linear-gradient(to bottom, color(bg, 2), rgba(color(bg, 2), 0));
-  }
-
   .features-inner {
     text-align: center;
   }

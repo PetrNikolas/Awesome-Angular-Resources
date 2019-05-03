@@ -11,11 +11,33 @@ import { Resource } from '../../models/resource.model';
 })
 export class ResourcesComponent {
 
+  protected readonly TYPE_ALL = 'all';
+  protected readonly TYPE_FRAMEWORK = 'framework';
+  protected readonly TYPE_LIB = 'lib';
+  protected readonly TYPE_TOOL = 'tool';
+  protected readonly TYPE_STARTER = 'starter';
+  protected readonly TYPE_OTHER = 'other';
+
+  selectedTab = this.TYPE_ALL;
+
   resources$: Resource[];
   queryString = '';
 
   constructor() {
     this.resources$ = RESOURCES;
+  }
+
+  filterHandler(type: string) {
+    this.selectedTab = type;
+    const data = RESOURCES;
+
+    if (type === 'all') {
+      this.resources$ = data;
+      return;
+    }
+
+    this.resources$ = data.filter(item => item.type === type);
+    return;
   }
 
   getImage() {
