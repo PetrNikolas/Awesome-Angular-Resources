@@ -114,3 +114,21 @@
 	}
 
 }
+
+@include media( '<large' ) {
+
+	.feature {
+    width: 50%;
+    max-width: 50%;
+  }
+
+}
+
+@include media( '<medium' ) {
+
+	.feature {
+    width: 100%;
+    max-width: 100%;
+  }
+
+}

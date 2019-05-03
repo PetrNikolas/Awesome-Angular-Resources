@@ -21,6 +21,7 @@
 .hero-illustration {
 	position: relative;
     margin-top: 48px;
+    display: none;
 }
 
 .hero-shape {
@@ -56,11 +57,6 @@
 		margin: 0;
 	}
 
-	.hero-illustration {
-		margin-top: -143px;
-		padding-bottom: 0;
-	}
-
 	.hero-shape {
 		display: block;
 	}
@@ -89,5 +85,11 @@
     .hero-copy {
         padding-right: 92px;
         min-width: 620px;
+    }
+
+    .hero-illustration {
+      margin-top: -143px;
+      padding-bottom: 0;
+      display: block;
     }
 }
