@@ -38,7 +38,7 @@ export const RESOURCES = [
   {
     id: 7,
     title: 'Ant Design of Angular',
-    description: 'Following the Ant Design specification, we developed a Angular UI library ng-zorro-antd that contains a set of high quality components and demos for building rich, interactive user interfaces.',
+    description: 'We developed a Angular UI library that contains a set of high quality components and demos for building rich, interactive user interfaces.',
     link: 'https://ng.ant.design/docs/introduce/en'
   },
   {
@@ -212,7 +212,7 @@ export const RESOURCES = [
   {
     id: 36,
     title: 'ngx-api-utils',
-    description: 'ngx-api-utils is a lean library of utilities and helpers to quickly integrate any HTTP API (REST, Ajax, and any other) with Angular.',
+    description: 'ngx-api-utils is a lean library of utilities and helpers to quickly integrate any HTTP API with Angular.',
     link: 'https://github.com/ngx-api-utils/ngx-api-utils'
   },
   {
