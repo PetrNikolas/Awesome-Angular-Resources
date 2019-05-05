@@ -1,23 +1,15 @@
 <section class="features section">
   <div class="container">
     <div class="features-inner section-inner">
-      <div class="features-header text-center">
-        <div class="container-sm">
-          <h2 class="section-title mt-0">Meet Angular Resources</h2>
-          <p class="section-paragraph">
-            Blog articles, tools, libraries, open source projects, etc.
-          </p>
-        </div>
-      </div>
-      <input [(ngModel)]="queryString" class="search_input" type="text" placeholder="Search resources ..." />
+      <input [(ngModel)]="queryString" class="search_input" type="text" placeholder="Search resources by title or description ..." />
       <div class="filters">
         <strong>Filter by:</strong>
-        <span [class.selected]="selectedTab === TYPE_ALL" (click)="filterHandler('all')">All</span>
-        <span [class.selected]="selectedTab === TYPE_LIB" (click)="filterHandler('lib')">Libraries</span>
-        <span [class.selected]="selectedTab === TYPE_TOOL" (click)="filterHandler('tool')">Tools</span>
-        <span [class.selected]="selectedTab === TYPE_STARTER" (click)="filterHandler('starter')">Starter Kits</span>
-        <span [class.selected]="selectedTab === TYPE_FRAMEWORK" (click)="filterHandler('framework')">Frameworks</span>
-        <span [class.selected]="selectedTab === TYPE_OTHER" (click)="filterHandler('other')">Others</span>
+        <span [class.selected]="selectedTab$ === TYPE_ALL" (click)="filterHandler('all')">All</span>
+        <span [class.selected]="selectedTab$ === TYPE_LIB" (click)="filterHandler('lib')">Libraries</span>
+        <span [class.selected]="selectedTab$ === TYPE_TOOL" (click)="filterHandler('tool')">Tools</span>
+        <span [class.selected]="selectedTab$ === TYPE_STARTER" (click)="filterHandler('starter')">Starter Kits</span>
+        <span [class.selected]="selectedTab$ === TYPE_FRAMEWORK" (click)="filterHandler('framework')">Frameworks</span>
+        <span [class.selected]="selectedTab$ === TYPE_OTHER" (click)="filterHandler('other')">Others</span>
       </div>
       <div *ngIf="resources$" class="features-wrap">
         <div *ngFor="let item of resources$ | filterdata: queryString; index as i; trackBy: trackByFn" class="feature text-center is-revealing">

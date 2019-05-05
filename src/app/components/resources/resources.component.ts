@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
-import { RESOURCES } from '../../data/data';
-import { Resource } from '../../models/resource.model';
+import { Resource } from '../../models';
+import { RESOURCES } from '../../data';
 
 @Component({
   selector: 'app-resources',
@@ -18,7 +18,7 @@ export class ResourcesComponent {
   readonly TYPE_STARTER = 'starter';
   readonly TYPE_OTHER = 'other';
 
-  selectedTab = this.TYPE_ALL;
+  selectedTab$ = this.TYPE_ALL;
 
   resources$: Resource[];
   queryString = '';
@@ -27,8 +27,8 @@ export class ResourcesComponent {
     this.resources$ = RESOURCES;
   }
 
-  filterHandler(type: string) {
-    this.selectedTab = type;
+  filterHandler(type: string): void {
+    this.selectedTab$ = type;
     const data = RESOURCES;
 
     if (type === 'all') {
@@ -40,15 +40,16 @@ export class ResourcesComponent {
     return;
   }
 
-  getImage() {
+  getImage(): number {
     return Math.floor(Math.random() * 4) + 1;
   }
 
-  redirect(link: string) {
+  redirect(link: string): false {
     window.open(link, '_blank');
+    return false;
   }
 
-  trackByFn(index, item) {
+  trackByFn(index, item): number {
     return item.id;
   }
 }

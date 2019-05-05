@@ -18,7 +18,6 @@ export const PROVIDERS = [];
 export const COMPONENTS = [
   AppComponent,
   components.FooterComponent,
-  components.HeaderComponent,
   components.HeroComponent,
   components.ResourcesComponent,
   components.PodcastsComponent,

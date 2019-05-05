@@ -37,15 +37,6 @@
 			outline: 0;
 			text-decoration: underline;
 		}
-	} @else if ($type == 'header') {
-		color: color(typography, 2i);
-		text-transform: uppercase;
-		text-decoration: none;
-
-		&:hover,
-		&:active {
-			color: color(typography, 1i);
-		}
 	} @else if ($type == 'footer') {
 		color: color(typography, 3);
 		text-decoration: none;
