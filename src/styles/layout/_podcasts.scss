@@ -1,4 +1,4 @@
-.testimonials {
+.podcasts {
 	position: relative;
 
 	.section-inner {
@@ -11,25 +11,25 @@
     }
 }
 
-.testimonials-shape {
+.podcasts-shape {
 	position: absolute;
 }
 
-.testimonials-shape-1 {
+.podcasts-shape-1 {
 	bottom: 52px;
 	left: calc(50% - 80px);
 }
 
-.testimonials-shape-2 {
+.podcasts-shape-2 {
 	top: 84px;
 	left: calc(50% + 30px);
 }
 
-.testimonials-shape-3 {
+.podcasts-shape-3 {
 	display: none;
 }
 
-.testimonials-wrap {
+.podcasts-wrap {
     display: flex;
     flex-wrap: wrap;
 	// align-items: flex-start; // disables equal height boxes
@@ -46,7 +46,7 @@
     }
 }
 
-.testimonial {
+.podcast {
   cursor: pointer;
 	position: relative;
     padding: 44px 16px 16px;
@@ -55,7 +55,7 @@
     flex-grow: 1;
 }
 
-.testimonial-inner {
+.podcast-inner {
     position: relative;
 	height: 100%;
     display: flex;
@@ -79,11 +79,11 @@
     }
 }
 
-.testimonial-main {
+.podcast-main {
 	position: relative;
 }
 
-.testimonial-header {
+.podcast-header {
 	position: absolute;
 	top: -80px;
 
@@ -95,18 +95,18 @@
 	}
 }
 
-.testimonial-footer {
+.podcast-footer {
     align-self: flex-end;
 }
 
-.testimonial-footer {
+.podcast-footer {
 	@include font-weight(medium);
 	margin-bottom: 12px;
 }
 
 @include media( '>medium' ) {
 
-	.testimonials {
+	.podcasts {
 
 		.section-inner {
 			padding-bottom: 166px; /* 126+40px second column offset */
@@ -114,7 +114,7 @@
 
   }
 
-	.testimonials-wrap {
+	.podcasts-wrap {
 		margin-right: -24px;
 	    margin-left: -24px;
 
@@ -127,11 +127,11 @@
 	    }
 	}
 
-	.testimonial {
+	.podcast {
 	    padding: 52px 24px 24px;
 	}
 
-	.testimonials-shape-1 {
+	.podcasts-shape-1 {
 		bottom: auto;
 		top: 170px;
 	    left: calc(50% - 305px);
@@ -142,12 +142,12 @@
 		}
 	}
 
-	.testimonials-shape-2 {
+	.podcasts-shape-2 {
 		top: 480px;
 	    left: calc(50% + 190px);
 	}
 
-	.testimonials-shape-3 {
+	.podcasts-shape-3 {
 		display: block;
 		top: 570px;
 	    left: calc(50% - 320px);
@@ -156,7 +156,7 @@
 
 @include media( '>large' ) {
 
-	.testimonial {
+	.podcast {
 
 		&:nth-child(odd) {
 			top: 40px;

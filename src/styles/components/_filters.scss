@@ -1,0 +1,12 @@
+.filters {
+  text-align: left;
+
+  span {
+    cursor: pointer;
+    padding-left: 20px;
+
+    &.selected {
+      color: color(primary,2) !important;
+    }
+  }
+}
