@@ -76,6 +76,7 @@
         left: 0;
         @include shadow;
         mix-blend-mode: multiply;
+        border-radius: 17px;
     }
 }
 

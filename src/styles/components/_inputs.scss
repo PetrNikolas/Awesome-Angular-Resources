@@ -6,7 +6,8 @@
   background-color: transparent!important;
   padding: 25px 20px 25px 20px!important;
   text-overflow: ellipsis!important;
-  border: #eee;
+  border: 1px solid transparent;
+  border-radius: 6px;
   -webkit-box-shadow: 3px 3px 20px #eee;
   box-shadow: 3px 3px 20px #eee;
   outline: none;
