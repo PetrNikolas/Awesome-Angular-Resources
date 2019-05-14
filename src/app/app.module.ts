@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 
 import { COMPONENTS, PIPES, IMPORTS, ROOT_COMPONENT, PROVIDERS } from './index';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -8,7 +9,8 @@ import { COMPONENTS, PIPES, IMPORTS, ROOT_COMPONENT, PROVIDERS } from './index';
     ...PIPES
   ],
   imports: [
-    ...IMPORTS
+    ...IMPORTS,
+    BrowserAnimationsModule
   ],
   providers: [
     ...PROVIDERS
