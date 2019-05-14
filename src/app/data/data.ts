@@ -342,4 +342,25 @@ export const RESOURCES = [
     link: 'https://nstudio.io/xplat',
     type: 'tool'
   },
+  {
+    id: 50,
+    title: 'AngularAir',
+    description: 'A live videocast on YouTube about all things Angular (by Google), a JavaScript platform for building mobile and desktop web applications.',
+    link: 'https://angularair.com/',
+    type: 'podcast'
+  },
+  {
+    id: 51,
+    title: 'Devchat.tv',
+    description: 'Devchat.tv - Adventures in Angular Episodes',
+    link: 'https://devchat.tv/adv-in-angular/',
+    type: 'podcast'
+  },
+  {
+    id: 52,
+    title: 'Happy Angular',
+    description: 'Lade dir die aktuelle Folge des Happy Angular Podcasts herunter',
+    link: 'https://happy-angular.de/',
+    type: 'podcast'
+  },
 ];

@@ -23,7 +23,6 @@ export const COMPONENTS = [
   components.FooterComponent,
   components.HeroComponent,
   components.ResourcesComponent,
-  components.PodcastsComponent,
 ];
 
 export const ROOT_COMPONENT = [
