@@ -335,4 +335,11 @@ export const RESOURCES = [
     link: 'https://ngxs.gitbook.io/ngxs/',
     type: 'lib'
   },
+  {
+    id: 49,
+    title: 'XPLAT',
+    description: 'Cross-platform (xplat) tools for Nx workspaces',
+    link: 'https://nstudio.io/xplat',
+    type: 'tool'
+  },
 ];
