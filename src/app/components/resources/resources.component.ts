@@ -17,6 +17,7 @@ export class ResourcesComponent {
   readonly TYPE_TOOL = 'tool';
   readonly TYPE_STARTER = 'starter';
   readonly TYPE_PODCAST = 'podcast';
+  readonly TYPE_COMMUNITY = 'community';
   readonly TYPE_OTHER = 'other';
 
   selectedTab$ = this.TYPE_ALL;

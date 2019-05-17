@@ -363,4 +363,137 @@ export const RESOURCES = [
     link: 'https://happy-angular.de/',
     type: 'podcast'
   },
+  {
+    id: 53,
+    title: 'Angular on Gitter',
+    description: 'Discussion for angular (2+).',
+    link: 'https://gitter.im/angular/angular',
+    type: 'community'
+  },
+  {
+    id: 54,
+    title: 'Angular on StackOverflow',
+    description: 'Questions about Angular (not to be confused with AngularJS), the web framework from Google.',
+    link: 'https://stackoverflow.com/questions/tagged/angular',
+    type: 'community'
+  },
+  {
+    id: 55,
+    title: 'Angular on Reddit',
+    description: 'r/Angular2 exists to help spread news, discuss current developments and help solve problems.',
+    link: 'https://www.reddit.com/r/Angular2/',
+    type: 'community'
+  },
+  {
+    id: 56,
+    title: 'Angular Webpack Starter',
+    description: 'A complete Angular 6 and Webpack 4 starter seed with minimal and full featured branches.',
+    link: 'https://github.com/qdouble/angular-webpack-starter',
+    type: 'starter'
+  },
+  {
+    id: 57,
+    title: 'angular-webpack',
+    description: 'A complete, yet simple, starter for Angular v2+ using webpack',
+    link: 'https://github.com/preboot/angular-webpack',
+    type: 'starter'
+  },
+  {
+    id: 58,
+    title: 'Angular Visual Studio Webpack Starter',
+    description: 'Template for ASP.NET Core, Angular with Webpack and Visual Studio',
+    link: 'https://github.com/damienbod/AngularWebpackVisualStudio',
+    type: 'starter'
+  },
+  {
+    id: 59,
+    title: 'Angular2 starter kit with Typescript and Webpack',
+    description: 'Angular2 starter kit with Typescript and Webpack',
+    link: 'https://github.com/schempy/angular2-typescript-webpack',
+    type: 'starter'
+  },
+  {
+    id: 60,
+    title: 'angular-starter',
+    description: 'Angular starter for angular 2+',
+    link: 'https://github.com/michaelbazos/angular-starter',
+    type: 'starter'
+  },
+  {
+    id: 61,
+    title: 'angular-tslint-rules',
+    description: 'Shared TSLint & codelyzer rules to enforce a consistent code style for Angular development',
+    link: 'https://github.com/ng-seed/angular-tslint-rules',
+    type: 'tool'
+  },
+  {
+    id: 62,
+    title: 'Angular5+ Filter Pipe',
+    description: 'Angular 5+ pipeline for filtering arrays.',
+    link: 'https://github.com/VadimDez/ngx-filter-pipe',
+    type: 'lib'
+  },
+  {
+    id: 63,
+    title: 'NGX-pipes',
+    description: 'Useful pipes for Angular with no external dependencies!',
+    link: 'https://github.com/danrevah/ngx-pipes',
+    type: 'lib'
+  },
+  {
+    id: 64,
+    title: 'Angular 5+ Order Pipe',
+    description: 'Angular 5+ orderBy pipe',
+    link: 'https://github.com/VadimDez/ngx-order-pipe',
+    type: 'lib'
+  },
+  {
+    id: 65,
+    title: 'generator-ngx-rocket',
+    description: 'Extensible Angular 7+ enterprise-grade project generator',
+    link: 'https://github.com/ngx-rocket/generator-ngx-rocket',
+    type: 'tool'
+  },
+  {
+    id: 66,
+    title: 'AngularDoc',
+    description: 'Announcing the worlds first static analysis service for JavaScript/TypeScript applications',
+    link: 'https://angulardoc.io/',
+    type: 'tool'
+  },
+  {
+    id: 67,
+    title: 'ng-app-counter',
+    description: 'Count the number of Modules, Lazy Modules, Pipes, Providers, Directives, Components used in an Angular application.',
+    link: 'https://github.com/irustm/ng-app-counter',
+    type: 'tool'
+  },
+  {
+    id: 68,
+    title: 'Universal Angular Application',
+    description: 'Angular 8 Universal starter kit based on @angular/cli featuring Server-Side Rendering (SSR) and HMR on browser/server sides',
+    link: 'https://github.com/enten/angular-universal',
+    type: 'starter'
+  },
+  {
+    id: 69,
+    title: 'Angular 7 Universal Heroku Starter',
+    description: 'Angular 7 PWA Universal Heroku Starter - Starter project for an Angular 7 application with Universal implementation and heroku build configuration',
+    link: 'https://github.com/Alex61NN5/angular-universal-pwa-heroku-starter',
+    type: 'starter'
+  },
+  {
+    id: 70,
+    title: 'Angular-Meteor',
+    description: 'Build Realtime Web and Mobile Apps With Angular and Meteor',
+    link: 'https://angular-meteor.com/',
+    type: 'framework'
+  },
+  {
+    id: 71,
+    title: 'angular-react-native',
+    description: 'Use Angular and React Native to build applications for Android and iOS.',
+    link: 'https://github.com/angular/react-native-renderer',
+    type: 'framework'
+  },
 ];

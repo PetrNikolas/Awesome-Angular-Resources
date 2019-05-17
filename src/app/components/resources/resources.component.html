@@ -9,6 +9,7 @@
         <span [class.selected]="selectedTab$ === TYPE_ALL" (click)="filterHandler('all')">All</span>
         <span [class.selected]="selectedTab$ === TYPE_LIB" (click)="filterHandler('lib')">Libraries</span>
         <span [class.selected]="selectedTab$ === TYPE_TOOL" (click)="filterHandler('tool')">Tools</span>
+        <span [class.selected]="selectedTab$ === TYPE_COMMUNITY" (click)="filterHandler('community')">Community</span>
         <span [class.selected]="selectedTab$ === TYPE_STARTER" (click)="filterHandler('starter')">Starter Kits</span>
         <span [class.selected]="selectedTab$ === TYPE_FRAMEWORK" (click)="filterHandler('framework')">Frameworks</span>
         <span [class.selected]="selectedTab$ === TYPE_PODCAST" (click)="filterHandler('podcast')">Podcasts</span>
