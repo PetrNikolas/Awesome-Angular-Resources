@@ -1,7 +1,9 @@
 <section class="features section">
   <div class="container">
     <div class="features-inner section-inner">
-      <input [(ngModel)]="queryString" class="search_input" type="text" placeholder="Search resources by title or description ..." />
+      <label for="search">
+        <input id="search" [(ngModel)]="queryString" class="search_input" type="text" name="search" placeholder="Search resources by title or description ..." />
+      </label>
       <div class="filters">
         <strong>Filter by:</strong>
         <span [class.selected]="selectedTab$ === TYPE_ALL" (click)="filterHandler('all')">All</span>
