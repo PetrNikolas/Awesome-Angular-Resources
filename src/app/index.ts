@@ -23,6 +23,7 @@ export const COMPONENTS = [
   components.FooterComponent,
   components.HeroComponent,
   components.ResourcesComponent,
+  components.ScrollTopComponent,
 ];
 
 export const ROOT_COMPONENT = [
