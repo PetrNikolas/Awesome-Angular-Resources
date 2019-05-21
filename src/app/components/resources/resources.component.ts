@@ -42,10 +42,6 @@ export class ResourcesComponent {
     return;
   }
 
-  getImage(): number {
-    return Math.floor(Math.random() * 4) + 1;
-  }
-
   redirect(link: string): false {
     window.open(link, '_blank');
     return false;
