@@ -497,7 +497,7 @@ export const RESOURCES = [
     type: 'framework'
   },
   {
-    id: 52,
+    id: 72,
     title: 'Angular In Depth',
     description: 'The place where advanced Angular concepts are explained.',
     link: 'https://blog.angularindepth.com',
