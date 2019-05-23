@@ -496,4 +496,11 @@ export const RESOURCES = [
     link: 'https://github.com/angular/react-native-renderer',
     type: 'framework'
   },
+  {
+    id: 52,
+    title: 'Angular In Depth',
+    description: 'The place where advanced Angular concepts are explained.',
+    link: 'https://blog.angularindepth.com',
+    type: 'community'
+  },
 ];
