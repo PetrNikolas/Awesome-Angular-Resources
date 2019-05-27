@@ -1,12 +1,12 @@
-.features {
+.resources {
 	position: relative;
 
-  .features-inner {
+  .resources-inner {
     text-align: center;
   }
 }
 
-.features-wrap {
+.resources-wrap {
     display: flex;
     flex-wrap: wrap;
 	/* align-items: flex-start; // disables equal height boxes */
@@ -23,7 +23,7 @@
     }
 }
 
-.feature {
+.resource {
 	position: relative;
     padding: 16px;
     width: 33.333333%;
@@ -31,7 +31,7 @@
     flex-grow: 1;
 }
 
-.feature-inner {
+.resource-inner {
     position: relative;
     height: 100%;
     background: color(bg, 1);
@@ -51,42 +51,16 @@
     }
 }
 
-.feature-icon {
-	position: relative;
-    margin: 0 auto;
-	width: 88px;
-	height: 88px;
-	border-radius: 50%;
-
-	&::before {
-		content: '';
-		display: block;
-		background: color(bg, 1);
-		width: 64px;
-		height: 64px;
-		position: absolute;
-		top: 12px;
-		left: 12px;
-		border-radius: 50%;
-		box-shadow: 12px 24px 32px rgba(color(typography,1), .12);
-	}
-
-	svg {
-		position: relative; /* To display the svg icon above the background color */
-	}
-}
-
 @include media( '>medium' ) {
 
-    .features {
-
-		.section-paragraph {
-			padding-left: 72px;
-			padding-right: 72px;
-		}
+  .resources {
+    .section-paragraph {
+      padding-left: 72px;
+      padding-right: 72px;
     }
+  }
 
-	.features-wrap {
+	.resources-wrap {
 		padding-top: 24px;
 	    margin-right: -24px;
 	    margin-left: -24px;
@@ -100,14 +74,14 @@
 	    }
 	}
 
-	.feature {
+	.resource {
 	    padding: 24px;
 	}
 }
 
 @include media( '>large' ) {
 
-	.features {
+	.resources {
 
 		.section-inner {
 			padding-bottom: 168px; /* 88+80px second column offset */
@@ -118,7 +92,7 @@
 
 @include media( '<large' ) {
 
-	.feature {
+	.resource {
     width: 50%;
     max-width: 50%;
   }
@@ -127,7 +101,7 @@
 
 @include media( '<medium' ) {
 
-	.feature {
+	.resource {
     width: 100%;
     max-width: 100%;
   }
