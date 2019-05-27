@@ -18,30 +18,11 @@
 	margin: 0 auto;
 }
 
-.hero-illustration {
-	position: relative;
-    margin-top: 48px;
-    display: none;
-}
-
-.hero-shape {
-	display: none;
-    position: absolute;
-}
-
-.hero-main-shape {
-
-	svg {
-		width: 140%;
-		height: auto;
-	}
-}
-
 @include media( '>medium' ) {
 
-    .hero {
+  .hero {
 		text-align: left;
-    }
+  }
 
 	.hero-inner {
 		/* Split hero in two half */
@@ -56,28 +37,6 @@
 	.hero-form {
 		margin: 0;
 	}
-
-	.hero-shape {
-		display: block;
-	}
-
-	.hero-shape-1 {
-		left: -32px;
-		top: 542px;
-	}
-
-	.hero-shape-2 {
-		left: -733px;
-		top: 538px;
-	}
-
-	.hero-main-shape {
-
-		svg {
-			width: auto;
-			height: 647px;
-		}
-	}
 }
 
 @include media( '>large' ) {
@@ -85,11 +44,5 @@
     .hero-copy {
         padding-right: 92px;
         min-width: 620px;
-    }
-
-    .hero-illustration {
-      margin-top: -143px;
-      padding-bottom: 0;
-      display: block;
     }
 }
