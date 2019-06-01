@@ -1,5 +1,5 @@
 .hero {
-	text-align: center;
+	text-align: left;
     padding-top: 100px;
 }
 
@@ -15,13 +15,16 @@
 
 .hero-form {
 	max-width: 440px;
-	margin: 0 auto;
 }
 
 @include media( '>medium' ) {
 
   .hero {
 		text-align: left;
+  }
+
+  .hero-form {
+    margin: 0 auto;
   }
 
 	.hero-inner {
