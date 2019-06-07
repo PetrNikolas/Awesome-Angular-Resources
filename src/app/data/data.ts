@@ -503,4 +503,11 @@ export const RESOURCES = [
     link: 'https://blog.angularindepth.com',
     type: 'community'
   },
+  {
+    id: 73,
+    title: 'AviaCommerce',
+    description: 'Open Source E-Commerce Framework.',
+    link: 'https://www.aviacommerce.org/',
+    type: 'framework'
+  },
 ];
