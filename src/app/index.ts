@@ -14,7 +14,7 @@ import * as pipes from './pipes';
 export const IMPORTS = [
   BrowserModule,
   FormsModule,
-  ScrollingModule,
+  // ScrollingModule,
   // shown passing global defaults (optional)
   /**AdsenseModule.forRoot({
     adClient: 'ca-pub-7640562161899788',
