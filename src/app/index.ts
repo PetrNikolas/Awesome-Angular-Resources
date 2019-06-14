@@ -15,11 +15,10 @@ export const IMPORTS = [
   BrowserModule,
   FormsModule,
   // ScrollingModule,
-  // shown passing global defaults (optional)
-  /**AdsenseModule.forRoot({
-    adClient: 'ca-pub-7640562161899788',
+  AdsenseModule.forRoot({
+    adClient: 'ca-pub-9049835979972391',
     adSlot: 7259870550,
-  }),*/
+  }),
 ];
 
 export const PROVIDERS = [];
