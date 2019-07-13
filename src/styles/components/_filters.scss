@@ -4,6 +4,11 @@
   span {
     cursor: pointer;
     padding-left: 20px;
+    font-size: 90%;
+
+    &:first-child {
+      padding-left: 0;
+    }
 
     &.selected {
       color: color(primary,2) !important;
