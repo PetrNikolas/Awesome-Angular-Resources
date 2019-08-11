@@ -2,7 +2,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { ScrollingModule } from '@angular/cdk/scrolling';
-import { AdsenseModule } from 'ng2-adsense';
+// import { AdsenseModule } from 'ng2-adsense';
 
 // Components
 import { AppComponent } from './app.component';
@@ -15,10 +15,10 @@ export const IMPORTS = [
   BrowserModule,
   FormsModule,
   // ScrollingModule,
-  AdsenseModule.forRoot({
+  /**AdsenseModule.forRoot({
     adClient: 'ca-pub-9049835979972391',
     adSlot: 7259870550,
-  }),
+  }),*/
 ];
 
 export const PROVIDERS = [];
