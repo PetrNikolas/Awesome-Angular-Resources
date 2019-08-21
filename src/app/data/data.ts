@@ -510,4 +510,11 @@ export const RESOURCES = [
     link: 'https://www.aviacommerce.org/',
     type: 'framework'
   },
+  {
+    id: 74,
+    title: 'Angular 8 NgRx Material Starter',
+    description: 'Angular 8 with NgRx 8 and Angular Material, features best practices, animations, tests and dynamic color themes',
+    link: 'https://tomastrajan.github.io/angular-ngrx-material-starter',
+    type: 'starter'
+  },
 ];
