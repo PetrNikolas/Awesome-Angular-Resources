@@ -517,4 +517,11 @@ export const RESOURCES = [
     link: 'https://tomastrajan.github.io/angular-ngrx-material-starter',
     type: 'starter'
   },
+  {
+    id: 75,
+    title: 'NestJS',
+    description: 'NodeJS framework built on Express, but heavily inspired by Angular. Beautifully completes Angular frontend into full-stack Angular-like application',
+    link: 'https://nestjs.com',
+    type: 'framework'  
+  }
 ];
