@@ -44,14 +44,16 @@ export const RESOURCES = [
   {
     id: 7,
     title: 'Ant Design of Angular',
-    description: 'We developed a Angular UI library that contains a set of high quality components and demos for building rich, interactive user interfaces.',
+    description:
+      'We developed a Angular UI library that contains a set of high quality components and demos for building rich, interactive user interfaces.',
     link: 'https://ng.ant.design/docs/introduce/en',
     type: 'framework'
   },
   {
     id: 8,
     title: 'Ant Design Mobile of Angular',
-    description: 'This is the Angular implementation of Ant Design Mobile specification, serving Alibaba big data wireless service.',
+    description:
+      'This is the Angular implementation of Ant Design Mobile specification, serving Alibaba big data wireless service.',
     link: 'http://ng.mobile.ant.design/#/docs/introduce/en',
     type: 'framework'
   },
@@ -65,7 +67,8 @@ export const RESOURCES = [
   {
     id: 10,
     title: 'Clarity Design System',
-    description: 'UX guidelines, HTML/CSS framework, and Angular components working together to craft exceptional experiences',
+    description:
+      'UX guidelines, HTML/CSS framework, and Angular components working together to craft exceptional experiences',
     link: 'https://clarity.design/',
     type: 'lib'
   },
@@ -79,7 +82,8 @@ export const RESOURCES = [
   {
     id: 12,
     title: 'Bootstrap widgets',
-    description: 'Angular widgets built from the ground up using only Bootstrap 4 CSS with APIs designed for the Angular ecosystem.',
+    description:
+      'Angular widgets built from the ground up using only Bootstrap 4 CSS with APIs designed for the Angular ecosystem.',
     link: 'https://ng-bootstrap.github.io/#/home',
     type: 'lib'
   },
@@ -107,7 +111,8 @@ export const RESOURCES = [
   {
     id: 16,
     title: 'NativeScript',
-    description: 'Open source framework for building truly native mobile apps with Angular, Vue.js, TypeScript, or JavaScript.',
+    description:
+      'Open source framework for building truly native mobile apps with Angular, Vue.js, TypeScript, or JavaScript.',
     link: 'https://www.nativescript.org/',
     type: 'framework'
   },
@@ -219,7 +224,8 @@ export const RESOURCES = [
   {
     id: 32,
     title: 'Codelyzer',
-    description: 'Codelyzer is a tool great for teams and individuals, which helps you write consistent code, and discover potential errors.',
+    description:
+      'Codelyzer is a tool great for teams and individuals, which helps you write consistent code, and discover potential errors.',
     link: 'http://codelyzer.com/',
     type: 'tool'
   },
@@ -247,7 +253,8 @@ export const RESOURCES = [
   {
     id: 36,
     title: 'ngx-api-utils',
-    description: 'ngx-api-utils is a lean library of utilities and helpers to quickly integrate any HTTP API with Angular.',
+    description:
+      'ngx-api-utils is a lean library of utilities and helpers to quickly integrate any HTTP API with Angular.',
     link: 'https://github.com/ngx-api-utils/ngx-api-utils',
     type: 'lib'
   },
@@ -345,7 +352,8 @@ export const RESOURCES = [
   {
     id: 50,
     title: 'AngularAir',
-    description: 'A live videocast on YouTube about all things Angular (by Google), a JavaScript platform for building mobile and desktop web applications.',
+    description:
+      'A live videocast on YouTube about all things Angular (by Google), a JavaScript platform for building mobile and desktop web applications.',
     link: 'https://angularair.com/',
     type: 'podcast'
   },
@@ -464,21 +472,24 @@ export const RESOURCES = [
   {
     id: 67,
     title: 'ng-app-counter',
-    description: 'Count the number of Modules, Lazy Modules, Pipes, Providers, Directives, Components used in an Angular application.',
+    description:
+      'Count the number of Modules, Lazy Modules, Pipes, Providers, Directives, Components used in an Angular application.',
     link: 'https://github.com/irustm/ng-app-counter',
     type: 'tool'
   },
   {
     id: 68,
     title: 'Universal Angular Application',
-    description: 'Angular 8 Universal starter kit based on @angular/cli featuring Server-Side Rendering (SSR) and HMR on browser/server sides',
+    description:
+      'Angular 8 Universal starter kit based on @angular/cli featuring Server-Side Rendering (SSR) and HMR on browser/server sides',
     link: 'https://github.com/enten/angular-universal',
     type: 'starter'
   },
   {
     id: 69,
     title: 'Angular 7 Universal Heroku Starter',
-    description: 'Angular 7 PWA Universal Heroku Starter - Starter project for an Angular 7 application with Universal implementation and heroku build configuration',
+    description:
+      'Angular 7 PWA Universal Heroku Starter - Starter project for an Angular 7 application with Universal implementation and heroku build configuration',
     link: 'https://github.com/Alex61NN5/angular-universal-pwa-heroku-starter',
     type: 'starter'
   },
@@ -513,15 +524,17 @@ export const RESOURCES = [
   {
     id: 74,
     title: 'Angular 8 NgRx Material Starter',
-    description: 'Angular 8 with NgRx 8 and Angular Material, features best practices, animations, tests and dynamic color themes',
+    description:
+      'Angular 8 with NgRx 8 and Angular Material, features best practices, animations, tests and dynamic color themes',
     link: 'https://tomastrajan.github.io/angular-ngrx-material-starter',
     type: 'starter'
   },
   {
     id: 75,
     title: 'NestJS',
-    description: 'NodeJS framework built on Express, but heavily inspired by Angular. Beautifully completes Angular frontend into full-stack Angular-like application',
+    description:
+      'NodeJS framework built on Express, but heavily inspired by Angular. Beautifully completes Angular frontend into full-stack Angular-like application',
     link: 'https://nestjs.com',
-    type: 'framework'  
+    type: 'framework'
   }
 ];
