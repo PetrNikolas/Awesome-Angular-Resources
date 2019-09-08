@@ -1,3 +1,7 @@
+// Shared
+export * from './shared/container/container.component';
+export * from './shared/section/section.component';
+
 // Layout
 export * from './layout/footer/footer.component';
 export * from './layout/scroll-top/scroll-top.component';
