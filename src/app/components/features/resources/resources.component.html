@@ -2,7 +2,14 @@
   <div class="container">
     <div class="resources-inner section-inner">
       <label for="search">
-        <input id="search" [(ngModel)]="queryString" class="search_input" type="text" name="search" placeholder="Search resources (70+) by title or description ..." />
+        <input
+          id="search"
+          [(ngModel)]="queryString"
+          class="search_input"
+          type="text"
+          name="search"
+          placeholder="Search resources (70+) by title or description ..."
+        />
       </label>
       <div class="filters">
         <span [class.selected]="selectedTab$ === TYPE_ALL" (click)="filterHandler('all')">All</span>
@@ -17,13 +24,18 @@
       <div *ngIf="resources$" class="resources-wrap">
         <!--<cdk-virtual-scroll-viewport itemSize="500" class="example-viewport">
           <div *cdkVirtualFor="let item of resources$ | filterdata: queryString; index as i; trackBy: trackByFn" class="resource text-center is-revealing">-->
-          <div *ngFor="let item of resources$ | filterdata: queryString; index as i; trackBy: trackByFn" class="resource text-center is-revealing">
-            <div class="resource-inner" (click)="redirect(item.link)" target="_blank">
-              <h4 class="resource-title h3-mobile mb-8">{{ item.title }}</h4>
-              <p class="text-sm">{{ item.description }}</p>
-              <p class="text-sm"><small>#{{ item.type }}</small></p>
-            </div>
+        <div
+          *ngFor="let item of resources$ | filterdata: queryString; index as i; trackBy: trackByFn"
+          class="resource text-center is-revealing"
+        >
+          <div class="resource-inner" (click)="redirect(item.link)" target="_blank">
+            <h4 class="resource-title h3-mobile mb-8">{{ item.title }}</h4>
+            <p class="text-sm">{{ item.description }}</p>
+            <p class="text-sm">
+              <small>#{{ item.type }}</small>
+            </p>
           </div>
+        </div>
         <!--</cdk-virtual-scroll-viewport>-->
       </div>
     </div>

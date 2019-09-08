@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
-import { Resource } from '../../models';
-import { RESOURCES } from '../../data';
+import { Resource } from '../../../models';
+import { RESOURCES } from '../../../data';
 
 @Component({
   selector: 'app-resources',
@@ -10,7 +10,6 @@ import { RESOURCES } from '../../data';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ResourcesComponent {
-
   readonly TYPE_ALL = 'all';
   readonly TYPE_FRAMEWORK = 'framework';
   readonly TYPE_LIB = 'lib';
