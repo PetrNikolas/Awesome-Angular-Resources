@@ -3,14 +3,21 @@
   "version": "1.0.2",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
     "build": "ng build",
     "build-prod": "ng build --prod",
-    "test": "ng test",
+    "ci": "yarn format:write && yarn format:fix && yarn lint && yarn test",
+    "e2e": "ng e2e",
+    "format:write": "prettier --config './.prettierrc' {src,e2e}/**/*.{ts,json,md,scss} --write",
     "format:fix": "pretty-quick --staged",
-    "precommit": "run-s format:fix lint",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "start": "ng serve",
+    "test": "ng test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn format:fix && yarn lint",
+      "pre-push": "yarn build-prod"
+    }
   },
   "private": true,
   "dependencies": {
@@ -41,6 +48,7 @@
     "@angular/language-service": "^6.0.3",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
+    "@types/mocha": "5.2.7",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.2.1",
     "husky": "3.0.5",
@@ -57,6 +65,7 @@
     "protractor": "~5.3.0",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
+    "tslint-config-prettier": "1.18.0",
     "typescript": "~2.7.2"
   }
 }

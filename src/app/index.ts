@@ -13,7 +13,7 @@ import * as pipes from './pipes';
 
 export const IMPORTS = [
   BrowserModule,
-  FormsModule
+  FormsModule,
   // ScrollingModule,
   /**AdsenseModule.forRoot({
     adClient: 'ca-pub-9049835979972391',
@@ -30,7 +30,7 @@ export const COMPONENTS = [
   components.ResourcesComponent,
   components.ScrollTopComponent,
   components.ContainerComponent,
-  components.SectionComponent
+  components.SectionComponent,
 ];
 
 export const ROOT_COMPONENT = [AppComponent];
