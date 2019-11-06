@@ -10,9 +10,9 @@ import { environment } from '../environments/environment';
   imports: [
     ...IMPORTS,
     BrowserAnimationsModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', {
+    /**ServiceWorkerModule.register('/ngsw-worker.js', {
       enabled: environment.production,
-    }),
+    }),*/
   ],
   providers: [...PROVIDERS],
   bootstrap: [...ROOT_COMPONENT],
