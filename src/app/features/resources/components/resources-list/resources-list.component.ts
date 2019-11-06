@@ -1,15 +1,15 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
-import { Resource } from '../../../models';
-import { RESOURCES } from '../../../data';
+import { Resource } from '../../../../shared/models/resource.model';
+import { RESOURCES } from '../../../../shared/data/resources.data';
 
 @Component({
-  selector: 'app-resources',
-  templateUrl: './resources.component.html',
-  styleUrls: ['./resources.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  selector: 'app-resources-list',
+  templateUrl: './resources-list.component.html',
+  styleUrls: ['./resources-list.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ResourcesComponent {
+export class ResourcesListComponent {
   readonly TYPE_ALL = 'all';
   readonly TYPE_FRAMEWORK = 'framework';
   readonly TYPE_LIB = 'lib';

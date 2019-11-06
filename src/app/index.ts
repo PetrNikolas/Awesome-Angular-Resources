@@ -5,11 +5,12 @@ import { BrowserModule } from '@angular/platform-browser';
 // import { AdsenseModule } from 'ng2-adsense';
 
 // Components
-import { AppComponent } from './app.component';
-import * as components from './components';
+import * as coreComponents from './core/components';
+import * as resourcesComponents from './features/resources/components';
+import * as sharedComponents from './shared/components';
 
 // Pipes
-import * as pipes from './pipes';
+import * as sharedPipes from './shared/pipes';
 
 export const IMPORTS = [
   BrowserModule,
@@ -24,15 +25,15 @@ export const IMPORTS = [
 export const PROVIDERS = [];
 
 export const COMPONENTS = [
-  AppComponent,
-  components.FooterComponent,
-  components.HeroComponent,
-  components.ResourcesComponent,
-  components.ScrollTopComponent,
-  components.ContainerComponent,
-  components.SectionComponent,
+  coreComponents.AppComponent,
+  coreComponents.FooterComponent,
+  sharedComponents.ScrollTopComponent,
+  sharedComponents.ContainerComponent,
+  sharedComponents.SectionComponent,
+  resourcesComponents.HeroComponent,
+  resourcesComponents.ResourcesListComponent,
 ];
 
-export const ROOT_COMPONENT = [AppComponent];
+export const ROOT_COMPONENT = [coreComponents.AppComponent];
 
-export const PIPES = [pipes.FilterdataPipe];
+export const PIPES = [sharedPipes.FilterdataPipe];
