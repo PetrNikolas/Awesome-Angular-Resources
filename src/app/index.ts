@@ -1,7 +1,7 @@
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { ScrollingModule } from '@angular/cdk/scrolling';
+// import { ScrollingModule } from '@angular/cdk/scrolling';
 // import { AdsenseModule } from 'ng2-adsense';
 
 // Components

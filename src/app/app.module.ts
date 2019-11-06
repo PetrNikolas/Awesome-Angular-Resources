@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 
 import { COMPONENTS, PIPES, IMPORTS, ROOT_COMPONENT, PROVIDERS } from './index';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
+// import { ServiceWorkerModule } from '@angular/service-worker';
+// import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [...COMPONENTS, ...PIPES],
