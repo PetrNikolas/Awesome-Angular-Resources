@@ -1,0 +1,27 @@
+{
+  "folders": [{
+    "path": "."
+  }],
+  "settings": {
+    "files.exclude": {
+      "**/.angulardoc.json": true,
+      "**/.editorconfig": true,
+      "**/.gitignore": true,
+      "**/.gitkeep": true,
+      "**/.prettierignore": true,
+      "**/.prettierrc": true,
+      "**/.vscode": true,
+      "**/*.code-workspace": true,
+      "**/browserslist": true,
+      "**/dist": true,
+      "**/ngsw-config.json": true,
+      "**/node_modules": true,
+      "**/tsconfig.app.json": true,
+      "**/tsconfig.json": true,
+      "**/tsconfig.spec.json": true,
+      "**/tslint.json": true,
+      "**/yarn.lock": true,
+    },
+    "editor.wordWrapColumn": 120
+  }
+}
