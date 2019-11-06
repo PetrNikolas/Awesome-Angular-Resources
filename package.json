@@ -15,8 +15,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn format:fix && yarn lint",
-      "pre-push": "yarn build-prod"
+      "pre-commit": "yarn format:fix && yarn lint"
     }
   },
   "private": true,
