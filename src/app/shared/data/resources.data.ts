@@ -561,4 +561,13 @@ export const RESOURCES = [
     link: 'https://nestjs.com',
     type: 'framework',
   },
+  {
+    id: 76,
+    title: 'ngx-scrolltop',
+    description:
+      // tslint:disable-next-line:max-line-length
+      'Lightweight, Material Design inspired button for go-to-top of the page. No dependencies. Pure Angular!',
+    link: 'https://github.com/bartholomej/ngx-scrolltop',
+    type: 'lib',
+  },
 ];
