@@ -448,4 +448,12 @@ export const RESOURCES: Resource[] = [
     link: 'https://nestjs.com',
     type: 'framework',
   },
+  {
+    id: 76,
+    title: 'Ngx Date Range',
+    description:
+      'Date range picker for Angular 2+ with customizeable content slot for implementing your own input markup.',
+    link: 'https://github.com/alsoicode/ngx-daterange#readme',
+    type: 'lib',
+  },
 ];
