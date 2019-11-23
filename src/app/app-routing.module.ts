@@ -24,6 +24,10 @@ const routes: Routes = [
     path: 'starter-kits',
     component: StarterKitsComponent,
   },
+  {
+    path: '**',
+    redirectTo: '/home',
+  },
 ];
 
 @NgModule({
