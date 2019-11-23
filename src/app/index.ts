@@ -9,7 +9,9 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Components
 import * as coreComponents from './core/components';
+import * as homeComponents from './features/home';
 import * as resourcesComponents from './features/resources';
+import * as starterKitsComponents from './features/starter-kits';
 import * as sharedComponents from './shared/components';
 
 // Pipes
@@ -35,9 +37,14 @@ export const COMPONENTS = [
   sharedComponents.ScrollTopComponent,
   sharedComponents.ContainerComponent,
   sharedComponents.SectionComponent,
+  homeComponents.HomeComponent,
+  homeComponents.HeroComponent,
   resourcesComponents.ResourcesComponent,
   resourcesComponents.HeroComponent,
   resourcesComponents.ResourcesListComponent,
+  starterKitsComponents.HeroComponent,
+  starterKitsComponents.StarterKitsComponent,
+  starterKitsComponents.StarterKitsListComponent,
 ];
 
 export const ROOT_COMPONENT = [coreComponents.AppComponent];
