@@ -1,0 +1,37 @@
+.site-header {
+  position: relative;
+  color: color(typography, 1);
+
+  ul {
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 24px;
+
+    li {
+      display: inline;
+
+      @media only screen and (max-width: 540px) {
+        width: 100%;
+      }
+
+      a {
+        color: #565678;
+        display: block;
+        text-align: center;
+        padding: 0 16px;
+        text-decoration: none;
+
+        &:hover,
+        &.is-active {
+          color: #c3002f;
+        }
+      }
+    }
+  }
+}

@@ -8,6 +8,11 @@ import { StarterKitsComponent } from './features/starter-kits';
 const routes: Routes = [
   {
     path: '',
+    redirectTo: '/home',
+    pathMatch: 'full',
+  },
+  {
+    path: 'home',
     component: HomeComponent,
     pathMatch: 'full',
   },

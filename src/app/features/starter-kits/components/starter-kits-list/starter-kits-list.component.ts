@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
-import { Resource } from '../../../../shared/models/resource.model';
-import { RESOURCES } from '../../../../shared/data/resources.data';
+import { StarterKit } from '../../../../shared/models/starter-kit.model';
+import { STARTERS } from '../../../../shared/data/starter-kits.data';
 
 @Component({
   selector: 'app-starter-kits-list',
@@ -10,35 +10,11 @@ import { RESOURCES } from '../../../../shared/data/resources.data';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class StarterKitsListComponent {
-  readonly TYPE_ALL = 'all';
-  readonly TYPE_FRAMEWORK = 'framework';
-  readonly TYPE_LIB = 'lib';
-  readonly TYPE_TOOL = 'tool';
-  readonly TYPE_STARTER = 'starter';
-  readonly TYPE_PODCAST = 'podcast';
-  readonly TYPE_COMMUNITY = 'community';
-  readonly TYPE_OTHER = 'other';
-
-  selectedTab$ = this.TYPE_ALL;
-
-  resources$: Resource[];
+  starters$: StarterKit[];
   queryString = '';
 
   constructor() {
-    this.resources$ = RESOURCES;
-  }
-
-  filterHandler(type: string): void {
-    this.selectedTab$ = type;
-    const data = RESOURCES;
-
-    if (type === 'all') {
-      this.resources$ = data;
-      return;
-    }
-
-    this.resources$ = data.filter(item => item.type === type);
-    return;
+    this.starters$ = STARTERS;
   }
 
   redirect(link: string): false {

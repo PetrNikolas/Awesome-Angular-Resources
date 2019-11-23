@@ -33,12 +33,14 @@ export const PROVIDERS = [];
 
 export const COMPONENTS = [
   coreComponents.AppComponent,
+  coreComponents.HeaderComponent,
   coreComponents.FooterComponent,
   sharedComponents.ScrollTopComponent,
   sharedComponents.ContainerComponent,
   sharedComponents.SectionComponent,
   homeComponents.HomeComponent,
   homeComponents.HeroComponent,
+  homeComponents.HomeBoxesComponent,
   resourcesComponents.ResourcesComponent,
   resourcesComponents.HeroComponent,
   resourcesComponents.ResourcesListComponent,

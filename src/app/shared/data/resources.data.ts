@@ -1,4 +1,6 @@
-export const RESOURCES = [
+import { Resource } from '../models/resource.model';
+
+export const RESOURCES: Resource[] = [
   {
     id: 1,
     title: 'Angular Official Site',
@@ -16,16 +18,14 @@ export const RESOURCES = [
   {
     id: 3,
     title: 'Angular Playground',
-    description:
-      'An open source tool for building enterprise angular components, directives, and pipes in isolation',
+    description: 'An open source tool for building enterprise angular components, directives, and pipes in isolation',
     link: 'https://angularplayground.it/',
     type: 'tool',
   },
   {
     id: 4,
     title: 'Angular Augury',
-    description:
-      'A Chrome and Firefox Dev Tools extension for debugging Angular applications.',
+    description: 'A Chrome and Firefox Dev Tools extension for debugging Angular applications.',
     link: 'https://augury.rangle.io/',
     type: 'tool',
   },
@@ -93,8 +93,7 @@ export const RESOURCES = [
   {
     id: 13,
     title: 'NG-LIGHTNING',
-    description:
-      'Native Angular components & directives for Lightning Design System',
+    description: 'Native Angular components & directives for Lightning Design System',
     link: 'http://ng-lightning.github.io/ng-lightning/#/',
     type: 'lib',
   },
@@ -123,8 +122,7 @@ export const RESOURCES = [
   {
     id: 17,
     title: 'Ionic',
-    description:
-      'Ionic helps developers build and ship beautiful cross-platform hybrid apps.',
+    description: 'Ionic helps developers build and ship beautiful cross-platform hybrid apps.',
     link: 'https://ionicframework.com/',
     type: 'framework',
   },
@@ -152,16 +150,14 @@ export const RESOURCES = [
   {
     id: 21,
     title: 'Ignite UI for Angular',
-    description:
-      '50+ Material-based UI components designed and built on Google`s Angular framework',
+    description: '50+ Material-based UI components designed and built on Google`s Angular framework',
     link: 'https://www.infragistics.com/products/ignite-ui-angular',
     type: 'lib',
   },
   {
     id: 22,
     title: 'Angular 7 UI Components',
-    description:
-      'jQWidgets Angular UI components will help you to build perfect looking web applications.',
+    description: 'jQWidgets Angular UI components will help you to build perfect looking web applications.',
     link: 'https://www.jqwidgets.com/angular/',
     type: 'lib',
   },
@@ -189,8 +185,7 @@ export const RESOURCES = [
   {
     id: 26,
     title: 'DevExtreme Angular UI Components',
-    description:
-      '65+ Responsive and Touch-Enabled Widgets for Your Next Great Angular App',
+    description: '65+ Responsive and Touch-Enabled Widgets for Your Next Great Angular App',
     link: 'https://js.devexpress.com/Overview/Angular/',
     type: 'lib',
   },
@@ -247,8 +242,7 @@ export const RESOURCES = [
   {
     id: 34,
     title: 'UI-jar',
-    description:
-      'Test Driven Style Guide Development - Angular (4.x and above)',
+    description: 'Test Driven Style Guide Development - Angular (4.x and above)',
     link: 'https://github.com/ui-jar/ui-jar',
     type: 'lib',
   },
@@ -277,18 +271,9 @@ export const RESOURCES = [
   {
     id: 38,
     title: 'ngx-smart-modal',
-    description:
-      'Angular smart light and fast modal handler to manage modals and data everywhere.',
+    description: 'Angular smart light and fast modal handler to manage modals and data everywhere.',
     link: 'https://biig-io.github.io/ngx-smart-modal/',
     type: 'lib',
-  },
-  {
-    id: 39,
-    title: 'Celerio Angular Quickstart',
-    description:
-      'Generate an Angular 5 CRUD application from an existing database schema.',
-    link: 'https://github.com/jaxio/celerio-angular-quickstart',
-    type: 'starter',
   },
   {
     id: 40,
@@ -305,40 +290,11 @@ export const RESOURCES = [
     type: 'other',
   },
   {
-    id: 42,
-    title: 'Marley',
-    description:
-      'Modern Full-Stack !-> Angular 7+ and Node.js API <-! Starter Kit.',
-    link: 'https://getmarleyjs.com/',
-    type: 'starter',
-  },
-  {
-    id: 43,
-    title: 'ngX Starter Kit',
-    description: 'Angular 7+ starter kit for enterprise-grade projects',
-    link: 'https://github.com/ngx-rocket/starter-kit',
-    type: 'starter',
-  },
-  {
-    id: 44,
-    title: 'Angular Webpack Starter',
-    description: 'An Angular Starter kit featuring Angular',
-    link: 'https://github.com/PatrickJS/angular-starter',
-    type: 'starter',
-  },
-  {
     id: 45,
     title: 'Ultimate Courses',
     description: 'Superb quality courses for web developers',
     link: 'https://ultimatecourses.com/',
     type: 'other',
-  },
-  {
-    id: 46,
-    title: 'NGX Admin',
-    description: 'Admin dashboard template based on Angular 7+, Bootstrap 4',
-    link: 'http://akveo.github.io/ngx-admin/',
-    type: 'starter',
   },
   {
     id: 47,
@@ -380,8 +336,7 @@ export const RESOURCES = [
   {
     id: 52,
     title: 'Happy Angular',
-    description:
-      'Lade dir die aktuelle Folge des Happy Angular Podcasts herunter',
+    description: 'Lade dir die aktuelle Folge des Happy Angular Podcasts herunter',
     link: 'https://happy-angular.de/',
     type: 'podcast',
   },
@@ -395,62 +350,21 @@ export const RESOURCES = [
   {
     id: 54,
     title: 'Angular on StackOverflow',
-    description:
-      'Questions about Angular (not to be confused with AngularJS), the web framework from Google.',
+    description: 'Questions about Angular (not to be confused with AngularJS), the web framework from Google.',
     link: 'https://stackoverflow.com/questions/tagged/angular',
     type: 'community',
   },
   {
     id: 55,
     title: 'Angular on Reddit',
-    description:
-      'r/Angular2 exists to help spread news, discuss current developments and help solve problems.',
+    description: 'r/Angular2 exists to help spread news, discuss current developments and help solve problems.',
     link: 'https://www.reddit.com/r/Angular2/',
     type: 'community',
   },
   {
-    id: 56,
-    title: 'Angular Webpack Starter',
-    description:
-      'A complete Angular 6 and Webpack 4 starter seed with minimal and full featured branches.',
-    link: 'https://github.com/qdouble/angular-webpack-starter',
-    type: 'starter',
-  },
-  {
-    id: 57,
-    title: 'angular-webpack',
-    description:
-      'A complete, yet simple, starter for Angular v2+ using webpack',
-    link: 'https://github.com/preboot/angular-webpack',
-    type: 'starter',
-  },
-  {
-    id: 58,
-    title: 'Angular Visual Studio Webpack Starter',
-    description:
-      'Template for ASP.NET Core, Angular with Webpack and Visual Studio',
-    link: 'https://github.com/damienbod/AngularWebpackVisualStudio',
-    type: 'starter',
-  },
-  {
-    id: 59,
-    title: 'Angular2 starter kit with Typescript and Webpack',
-    description: 'Angular2 starter kit with Typescript and Webpack',
-    link: 'https://github.com/schempy/angular2-typescript-webpack',
-    type: 'starter',
-  },
-  {
-    id: 60,
-    title: 'angular-starter',
-    description: 'Angular starter for angular 2+',
-    link: 'https://github.com/michaelbazos/angular-starter',
-    type: 'starter',
-  },
-  {
     id: 61,
     title: 'angular-tslint-rules',
-    description:
-      'Shared TSLint & codelyzer rules to enforce a consistent code style for Angular development',
+    description: 'Shared TSLint & codelyzer rules to enforce a consistent code style for Angular development',
     link: 'https://github.com/ng-seed/angular-tslint-rules',
     type: 'tool',
   },
@@ -485,8 +399,7 @@ export const RESOURCES = [
   {
     id: 66,
     title: 'AngularDoc',
-    description:
-      'Announcing the worlds first static analysis service for JavaScript/TypeScript applications',
+    description: 'Announcing the worlds first static analysis service for JavaScript/TypeScript applications',
     link: 'https://angulardoc.io/',
     type: 'tool',
   },
@@ -499,23 +412,6 @@ export const RESOURCES = [
     type: 'tool',
   },
   {
-    id: 68,
-    title: 'Universal Angular Application',
-    description:
-      'Angular 8 Universal starter kit based on @angular/cli featuring Server-Side Rendering (SSR) and HMR on browser/server sides',
-    link: 'https://github.com/enten/angular-universal',
-    type: 'starter',
-  },
-  {
-    id: 69,
-    title: 'Angular 7 Universal Heroku Starter',
-    description:
-      // tslint:disable-next-line:max-line-length
-      'Angular 7 PWA Universal Heroku Starter - Starter project for an Angular 7 application with Universal implementation and heroku build configuration',
-    link: 'https://github.com/Alex61NN5/angular-universal-pwa-heroku-starter',
-    type: 'starter',
-  },
-  {
     id: 70,
     title: 'Angular-Meteor',
     description: 'Build Realtime Web and Mobile Apps With Angular and Meteor',
@@ -525,8 +421,7 @@ export const RESOURCES = [
   {
     id: 71,
     title: 'angular-react-native',
-    description:
-      'Use Angular and React Native to build applications for Android and iOS.',
+    description: 'Use Angular and React Native to build applications for Android and iOS.',
     link: 'https://github.com/angular/react-native-renderer',
     type: 'framework',
   },
@@ -543,14 +438,6 @@ export const RESOURCES = [
     description: 'Open Source E-Commerce Framework.',
     link: 'https://www.aviacommerce.org/',
     type: 'framework',
-  },
-  {
-    id: 74,
-    title: 'Angular 8 NgRx Material Starter',
-    description:
-      'Angular 8 with NgRx 8 and Angular Material, features best practices, animations, tests and dynamic color themes',
-    link: 'https://tomastrajan.github.io/angular-ngrx-material-starter',
-    type: 'starter',
   },
   {
     id: 75,
