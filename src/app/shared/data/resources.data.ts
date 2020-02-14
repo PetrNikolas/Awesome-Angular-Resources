@@ -456,4 +456,11 @@ export const RESOURCES: Resource[] = [
     link: 'https://github.com/alsoicode/ngx-daterange#readme',
     type: 'lib',
   },
+  {
+    id: 77,
+    title: 'ngrx-wieder',
+    description: 'Lightweight yet configurable solution for implementing undo-redo in Angular apps on top of NgRx',
+    link: 'https://github.com/nilsmehlhorn/ngrx-wieder',
+    type: 'lib'
+  }
 ];
