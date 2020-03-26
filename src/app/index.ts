@@ -39,7 +39,7 @@ export const COMPONENTS = [
   sharedComponents.ContainerComponent,
   sharedComponents.SectionComponent,
   homeComponents.HomeComponent,
-  homeComponents.HeroComponent,
+  homeComponents.HomeHeroComponent,
   homeComponents.HomeBoxesComponent,
   resourcesComponents.ResourcesComponent,
   resourcesComponents.HeroComponent,
