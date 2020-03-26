@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ResourcesComponent } from './features/resources';
-import { HomeComponent } from './features/home';
-import { StarterKitsComponent } from './features/starter-kits';
+import { ResourcesComponent } from './features/resources/components';
+import { HomeComponent } from './features/home/components';
+import { StarterKitsComponent } from './features/starter-kits/components';
 
 const routes: Routes = [
   {

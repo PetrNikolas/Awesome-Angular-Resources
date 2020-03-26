@@ -9,13 +9,12 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Components
 import * as coreComponents from './core/components';
-import * as homeComponents from './features/home';
-import * as resourcesComponents from './features/resources';
-import * as starterKitsComponents from './features/starter-kits';
-import * as sharedComponents from './shared/components';
 
-// Pipes
-import * as sharedPipes from './shared/pipes';
+// Modules
+import { SharedModule } from '@shared/shared.module';
+import { HomeModule } from './features/home/home.module';
+import { StarterKitsModule } from './features/starter-kits/starter-kits.module';
+import { ResourcesModule } from './features/resources/resources.module';
 
 export const IMPORTS = [
   BrowserModule,
@@ -27,28 +26,14 @@ export const IMPORTS = [
   }),*/
   BrowserAnimationsModule,
   AppRoutingModule,
+  SharedModule,
+  HomeModule,
+  StarterKitsModule,
+  ResourcesModule,
 ];
 
 export const PROVIDERS = [];
 
-export const COMPONENTS = [
-  coreComponents.AppComponent,
-  coreComponents.HeaderComponent,
-  coreComponents.FooterComponent,
-  sharedComponents.ScrollTopComponent,
-  sharedComponents.ContainerComponent,
-  sharedComponents.SectionComponent,
-  homeComponents.HomeComponent,
-  homeComponents.HomeHeroComponent,
-  homeComponents.HomeBoxesComponent,
-  resourcesComponents.ResourcesComponent,
-  resourcesComponents.HeroComponent,
-  resourcesComponents.ResourcesListComponent,
-  starterKitsComponents.HeroComponent,
-  starterKitsComponents.StarterKitsComponent,
-  starterKitsComponents.StarterKitsListComponent,
-];
+export const COMPONENTS = [coreComponents.AppComponent, coreComponents.HeaderComponent, coreComponents.FooterComponent];
 
 export const ROOT_COMPONENT = [coreComponents.AppComponent];
-
-export const PIPES = [sharedPipes.FilterdataPipe];
