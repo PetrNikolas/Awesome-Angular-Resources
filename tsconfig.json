@@ -11,30 +11,15 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "types": [
-      "reflect-metadata",
-      "node"
-    ],
-    "lib": [
-      "es2018",
-      "dom"
-    ],
+    "typeRoots": ["node_modules/@types"],
+    "types": ["reflect-metadata", "node"],
+    "lib": ["es2018", "dom"],
     "paths": {
-      "@data/*": [
-        "app/data/*"
-      ],
-      "@models/*": [
-        "app/models/*"
-      ],
-      "@components/*": [
-        "app/components/*"
-      ],
-      "@shared/*": [
-        "app/shared/*"
-      ]
+      "@data/*": ["app/shared/data/*"],
+      "@models/*": ["app/shared/models/*"],
+      "@core/*": ["app/core/*"],
+      "@features/*": ["app/features/*"],
+      "@shared/*": ["app/shared/*"]
     }
   },
   "angularCompilerOptions": {

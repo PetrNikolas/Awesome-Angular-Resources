@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
-import { Resource } from '../../../../shared/models/resource.model';
-import { RESOURCES } from '../../../../shared/data/resources.data';
+import { Resource } from '@models/resource.model';
+import { RESOURCES } from '@data/resources.data';
 
 @Component({
   selector: 'app-resources-list',

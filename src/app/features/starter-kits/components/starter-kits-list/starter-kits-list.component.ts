@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
-import { StarterKit } from '../../../../shared/models/starter-kit.model';
-import { STARTERS } from '../../../../shared/data/starter-kits.data';
+import { StarterKit } from '@models/starter-kit.model';
+import { STARTERS } from '@data/starter-kits.data';
 
 @Component({
   selector: 'app-starter-kits-list',

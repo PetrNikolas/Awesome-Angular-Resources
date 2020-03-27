@@ -6,15 +6,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { AdsenseModule } from 'ng2-adsense';
 
 import { AppRoutingModule } from './app-routing.module';
-
-// Components
-import * as coreComponents from './core/components';
+import { AppComponent } from '@core/components/app/app.component';
 
 // Modules
+import { CoreModule } from '@core/core.module';
 import { SharedModule } from '@shared/shared.module';
-import { HomeModule } from './features/home/home.module';
-import { StarterKitsModule } from './features/starter-kits/starter-kits.module';
-import { ResourcesModule } from './features/resources/resources.module';
+import { HomeModule } from '@features/home/home.module';
+import { StarterKitsModule } from '@features/starter-kits/starter-kits.module';
+import { ResourcesModule } from '@features/resources/resources.module';
 
 export const IMPORTS = [
   BrowserModule,
@@ -26,6 +25,7 @@ export const IMPORTS = [
   }),*/
   BrowserAnimationsModule,
   AppRoutingModule,
+  CoreModule,
   SharedModule,
   HomeModule,
   StarterKitsModule,
@@ -34,6 +34,6 @@ export const IMPORTS = [
 
 export const PROVIDERS = [];
 
-export const COMPONENTS = [coreComponents.AppComponent, coreComponents.HeaderComponent, coreComponents.FooterComponent];
+export const COMPONENTS = [];
 
-export const ROOT_COMPONENT = [coreComponents.AppComponent];
+export const ROOT_COMPONENT = [AppComponent];
