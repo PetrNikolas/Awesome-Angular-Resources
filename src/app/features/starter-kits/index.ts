@@ -13,5 +13,5 @@ export const PROVIDERS = [];
 export const COMPONENTS = [
   components.StarterKitsComponent,
   components.StarterKitsListComponent,
-  components.HeroComponent,
+  components.StarterKitsHeroComponent,
 ];

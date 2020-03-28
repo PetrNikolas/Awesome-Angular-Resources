@@ -1,0 +1,27 @@
+<app-section [classes]="'resources'">
+  <app-container>
+    <div class="resources-inner section-inner">
+      <div *ngIf="courses$" class="resources-wrap">
+        <!--<cdk-virtual-scroll-viewport itemSize="500" class="example-viewport">
+          <div *cdkVirtualFor="let item of starters$ | filterdata: queryString; index as i; trackBy: trackByFn" class="resource text-center is-revealing">-->
+        <div *ngFor="let item of courses$; index as i; trackBy: trackByFn" class="resource text-center is-revealing">
+          <div class="resource-inner" (click)="redirect(item.link)" target="_blank">
+            <h4 class="resource-title h3-mobile mb-8">{{ item.title }}</h4>
+            <p class="text-sm">{{ item.description }}</p>
+          </div>
+        </div>
+        <!--</cdk-virtual-scroll-viewport>-->
+      </div>
+    </div>
+  </app-container>
+</app-section>
+<app-scroll-top></app-scroll-top>
+<!--<ng-adsense
+  [adClient]="'ca-pub-9049835979972391'"
+  [adSlot]="7259870550"
+  [className]="'ads'"
+  [pageLevelAds]="true"
+  [display]="'block'"
+  [width]="320"
+  [height]="108">
+</ng-adsense>-->

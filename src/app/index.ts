@@ -14,6 +14,7 @@ import { SharedModule } from '@shared/shared.module';
 import { HomeModule } from '@features/home/home.module';
 import { StarterKitsModule } from '@features/starter-kits/starter-kits.module';
 import { ResourcesModule } from '@features/resources/resources.module';
+import { CoursesModule } from '@features/courses/courses.module';
 
 export const IMPORTS = [
   BrowserModule,
@@ -30,6 +31,7 @@ export const IMPORTS = [
   HomeModule,
   StarterKitsModule,
   ResourcesModule,
+  CoursesModule,
 ];
 
 export const PROVIDERS = [];

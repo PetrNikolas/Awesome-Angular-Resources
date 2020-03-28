@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ResourcesComponent } from '@features/resources/components';
 import { HomeComponent } from '@features/home/components';
 import { StarterKitsComponent } from '@features/starter-kits/components';
+import { CoursesComponent } from '@features/courses/components';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: 'starter-kits',
     component: StarterKitsComponent,
+  },
+  {
+    path: 'courses',
+    component: CoursesComponent,
   },
   {
     path: '**',

@@ -290,13 +290,6 @@ export const RESOURCES: Resource[] = [
     type: 'other',
   },
   {
-    id: 45,
-    title: 'Ultimate Courses',
-    description: 'Superb quality courses for web developers',
-    link: 'https://ultimatecourses.com/',
-    type: 'other',
-  },
-  {
     id: 47,
     title: 'Akita',
     description: 'State Management Tailored-Made for JS Applications',
@@ -461,6 +454,6 @@ export const RESOURCES: Resource[] = [
     title: 'ngrx-wieder',
     description: 'Lightweight yet configurable solution for implementing undo-redo in Angular apps on top of NgRx',
     link: 'https://github.com/nilsmehlhorn/ngrx-wieder',
-    type: 'lib'
-  }
+    type: 'lib',
+  },
 ];
