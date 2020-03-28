@@ -9,7 +9,6 @@
     "e2e": "ng e2e",
     "format:write": "prettier --config './.prettierrc' {src,e2e}/**/*.{ts,json,md,scss} --write",
     "format:fix": "pretty-quick --staged",
-    "generate-module": "ng generate module Name",
     "lint": "ng lint",
     "start": "ng serve",
     "test": "ng test"
