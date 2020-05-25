@@ -456,4 +456,11 @@ export const RESOURCES: Resource[] = [
     link: 'https://github.com/nilsmehlhorn/ngrx-wieder',
     type: 'lib',
   },
+  {
+    id: 78,
+    title: 'ng-google-sheets-db',
+    description: 'Use Google Sheets as your (read-only) backend!',
+    link: 'https://github.com/FranzDiebold/ng-google-sheets-db-library',
+    type: 'lib',
+  },
 ];
