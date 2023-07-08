@@ -456,4 +456,11 @@ export const RESOURCES: Resource[] = [
     link: 'https://github.com/nilsmehlhorn/ngrx-wieder',
     type: 'lib',
   },
+  {
+    id: 78,
+    title: 'Flowbite',
+    description: 'Open-source UI components built with Tailwind CSS and support for Angular.',
+    link: 'https://flowbite.com/docs/getting-started/angular/',
+    type: 'lib',
+  },
 ];
