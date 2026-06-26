@@ -2,7 +2,7 @@ import { SharedModule } from '@shared/shared.module';
 import { CommonModule } from '@angular/common';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
-import { Resource } from '@models/resource.model';
+import { Resource } from '@shared/models/resource.model';
 import { RESOURCES } from '@data/resources.data';
 
 @Component({
