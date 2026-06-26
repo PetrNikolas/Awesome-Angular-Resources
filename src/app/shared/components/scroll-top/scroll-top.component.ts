@@ -1,30 +1,24 @@
-import {
-  Component,
-  ChangeDetectionStrategy,
-  Inject,
-  HostListener,
-} from '@angular/core';
-import { DOCUMENT } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { Component, ChangeDetectionStrategy, Inject, HostListener } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
+  imports: [CommonModule],
+  standalone: true,
   selector: 'app-scroll-top',
   templateUrl: './scroll-top.component.html',
   styleUrls: ['./scroll-top.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ScrollTopComponent {
-  windowScrolled: boolean;
+  windowScrolled: boolean = false;
 
   // tslint:disable-next-line: deprecation
   constructor(@Inject(DOCUMENT) private document: Document) {}
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    if (
-      window.pageYOffset ||
-      document.documentElement.scrollTop ||
-      document.body.scrollTop > 100
-    ) {
+    if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 100) {
       this.windowScrolled = true;
     } else if (
       (this.windowScrolled && window.pageYOffset) ||
@@ -37,8 +31,7 @@ export class ScrollTopComponent {
 
   scrollToTop() {
     (function smoothscroll() {
-      const currentScroll =
-        document.documentElement.scrollTop || document.body.scrollTop;
+      const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
       if (currentScroll > 0) {
         window.requestAnimationFrame(smoothscroll);
         window.scrollTo(0, currentScroll - currentScroll / 8);

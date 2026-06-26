@@ -1,6 +1,8 @@
+@use "../abstracts/functions";
+
 .site-header {
   position: relative;
-  color: color(typography, 1);
+  color: functions.color(typography, 1);
 
   ul {
     list-style: none;

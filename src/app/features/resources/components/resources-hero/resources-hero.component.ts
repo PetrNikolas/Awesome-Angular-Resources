@@ -1,6 +1,10 @@
+import { SharedModule } from '@shared/shared.module';
+import { CommonModule } from '@angular/common';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
+  imports: [CommonModule, SharedModule],
+  standalone: true,
   selector: 'app-hero',
   templateUrl: './resources-hero.component.html',
   styleUrls: ['./resources-hero.component.scss'],

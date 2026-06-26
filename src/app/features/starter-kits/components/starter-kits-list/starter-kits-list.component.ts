@@ -1,9 +1,13 @@
+import { SharedModule } from '@shared/shared.module';
+import { CommonModule } from '@angular/common';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { StarterKit } from '@models/starter-kit.model';
 import { STARTERS } from '@data/starter-kits.data';
 
 @Component({
+  imports: [CommonModule, SharedModule],
+  standalone: true,
   selector: 'app-starter-kits-list',
   templateUrl: './starter-kits-list.component.html',
   styleUrls: ['./starter-kits-list.component.scss'],
@@ -22,7 +26,7 @@ export class StarterKitsListComponent {
     return false;
   }
 
-  trackByFn(index, item): number {
+  trackByFn(index: number, item: any): number {
     return item.id;
   }
 }

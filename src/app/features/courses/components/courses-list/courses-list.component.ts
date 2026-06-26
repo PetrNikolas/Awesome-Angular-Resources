@@ -1,9 +1,13 @@
+import { SharedModule } from '@shared/shared.module';
+import { CommonModule } from '@angular/common';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { Course } from '@models/course.model';
 import { COURSES } from '@data/courses.data';
 
 @Component({
+  imports: [CommonModule, SharedModule],
+  standalone: true,
   selector: 'app-courses-list',
   templateUrl: './courses-list.component.html',
   styleUrls: ['./courses-list.component.scss'],
@@ -22,7 +26,7 @@ export class CoursesListComponent {
     return false;
   }
 
-  trackByFn(index, item): number {
+  trackByFn(index: number, item: any): number {
     return item.id;
   }
 }

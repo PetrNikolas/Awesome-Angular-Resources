@@ -1,3 +1,4 @@
+@use "sass:map";
 // --------------------------------------------
 // Colors -------------------------------------
 // Usage example: color(primary, main)
@@ -39,7 +40,7 @@ $font__family: (
   // font-family(heading)
     code: 'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace',
   // font-family(code)
-    pre: '"Courier 10 Pitch", Courier, monospace' // font-family(pre),
+    pre: '"Courier 10 Pitch", Courier, monospace' // font-family(pre),,
 );
 
 $font__sizes: (
@@ -56,39 +57,39 @@ $font__sizes: (
 $font__scale: (
   desktop: (
     // i.e. $breakpoint__m + $breakpoint__l (600 - 1024)
-      1: map-get($font__sizes, alpha),
+      1: map.get($font__sizes, alpha),
     // H1
-      2: map-get($font__sizes, beta),
+      2: map.get($font__sizes, beta),
     // H2
-      3: map-get($font__sizes, gamma),
+      3: map.get($font__sizes, gamma),
     // H3
-      4: map-get($font__sizes, delta),
+      4: map.get($font__sizes, delta),
     // H4, H5, H6
-      5: map-get($font__sizes, epsilon),
+      5: map.get($font__sizes, epsilon),
     // Body
-      6: map-get($font__sizes, zeta),
+      6: map.get($font__sizes, zeta),
     // Text small
-      7: map-get($font__sizes, eta),
+      7: map.get($font__sizes, eta),
     // Text smaller
-      8: map-get($font__sizes, theta) // Footer area,
+      8: map.get($font__sizes, theta) // Footer area,,
   ),
   mobile: (
     // i.e. $breakpoint__xs + $breakpoint__s (up to 600)
-      1: map-get($font__sizes, beta),
+      1: map.get($font__sizes, beta),
     // H1
-      2: map-get($font__sizes, gamma),
+      2: map.get($font__sizes, gamma),
     // H2
-      3: map-get($font__sizes, delta),
+      3: map.get($font__sizes, delta),
     // H3
-      4: map-get($font__sizes, epsilon),
+      4: map.get($font__sizes, epsilon),
     // H4, H5, H6
-      5: map-get($font__sizes, zeta),
+      5: map.get($font__sizes, zeta),
     // Body
-      6: map-get($font__sizes, zeta),
+      6: map.get($font__sizes, zeta),
     // Text small
-      7: map-get($font__sizes, eta),
+      7: map.get($font__sizes, eta),
     // Text smaller
-      8: map-get($font__sizes, theta) // Footer area,
+      8: map.get($font__sizes, theta) // Footer area,,
   ),
 );
 
@@ -99,7 +100,7 @@ $font__weight: (
   // font__weight(medium)
     semibold: 600,
   // font__weight(semi-bold)
-    bold: 700 // font__weight(bold),
+    bold: 700 // font__weight(bold),,
 );
 
 // --------------------------------------------

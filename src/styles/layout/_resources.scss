@@ -1,5 +1,9 @@
+@use "../abstracts/functions";
+@use "../abstracts/include-media";
+@use "../abstracts/mixins";
+
 .resources {
-	position: relative;
+  position: relative;
 
   .resources-inner {
     text-align: center;
@@ -7,52 +11,51 @@
 }
 
 .resources-wrap {
-    display: flex;
-    flex-wrap: wrap;
-	/* align-items: flex-start; // disables equal height boxes */
-    justify-content: center;
-    margin-right: -16px;
-    margin-left: -16px;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: flex-start; // disables equal height boxes */
+  justify-content: center;
+  margin-right: -16px;
+  margin-left: -16px;
 
-    &:first-child {
-        margin-top: -16px;
-    }
+  &:first-child {
+    margin-top: -16px;
+  }
 
-    &:last-child {
-        margin-bottom: -16px;
-    }
+  &:last-child {
+    margin-bottom: -16px;
+  }
 }
 
 .resource {
-	position: relative;
-    padding: 16px;
-    width: 33.333333%;
-    max-width: 33.333333%;
-    flex-grow: 1;
+  position: relative;
+  padding: 16px;
+  width: 33.333333%;
+  max-width: 33.333333%;
+  flex-grow: 1;
 }
 
 .resource-inner {
-    position: relative;
-    height: 100%;
-    background: color(bg, 1);
-    padding: 48px 24px 72px;
-    cursor: pointer;
+  position: relative;
+  height: 100%;
+  background: functions.color(bg, 1);
+  padding: 48px 24px 72px;
+  cursor: pointer;
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        @include shadow;
-        mix-blend-mode: multiply;
-        border-radius: 17px;
-    }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    @include mixins.shadow;
+    mix-blend-mode: multiply;
+    border-radius: 17px;
+  }
 }
 
-@include media( '>medium' ) {
-
+@include include-media.media('>medium') {
   .resources {
     .section-paragraph {
       padding-left: 72px;
@@ -60,50 +63,43 @@
     }
   }
 
-	.resources-wrap {
-		padding-top: 24px;
-	    margin-right: -24px;
-	    margin-left: -24px;
+  .resources-wrap {
+    padding-top: 24px;
+    margin-right: -24px;
+    margin-left: -24px;
 
-	    &:first-child {
-	        margin-top: -24px;
-	    }
+    &:first-child {
+      margin-top: -24px;
+    }
 
-	    &:last-child {
-	        margin-bottom: -24px;
-	    }
-	}
+    &:last-child {
+      margin-bottom: -24px;
+    }
+  }
 
-	.resource {
-	    padding: 24px;
-	}
+  .resource {
+    padding: 24px;
+  }
 }
 
-@include media( '>large' ) {
-
-	.resources {
-
-		.section-inner {
-			padding-bottom: 168px; /* 88+80px second column offset */
-		}
-	}
-
+@include include-media.media('>large') {
+  .resources {
+    .section-inner {
+      padding-bottom: 168px; /* 88+80px second column offset */
+    }
+  }
 }
 
-@include media( '<large' ) {
-
-	.resource {
+@include include-media.media('<large') {
+  .resource {
     width: 50%;
     max-width: 50%;
   }
-
 }
 
-@include media( '<medium' ) {
-
-	.resource {
+@include include-media.media('<medium') {
+  .resource {
     width: 100%;
     max-width: 100%;
   }
-
 }

@@ -3,7 +3,7 @@ import { IMPORTS, EXPORTS, COMPONENTS } from './index';
 
 @NgModule({
   imports: [...IMPORTS],
-  declarations: [...COMPONENTS],
+  declarations: [],
   providers: [],
   exports: [...EXPORTS],
 })

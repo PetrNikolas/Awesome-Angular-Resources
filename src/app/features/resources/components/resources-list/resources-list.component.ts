@@ -1,9 +1,13 @@
+import { SharedModule } from '@shared/shared.module';
+import { CommonModule } from '@angular/common';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { Resource } from '@models/resource.model';
 import { RESOURCES } from '@data/resources.data';
 
 @Component({
+  imports: [CommonModule, SharedModule],
+  standalone: true,
   selector: 'app-resources-list',
   templateUrl: './resources-list.component.html',
   styleUrls: ['./resources-list.component.scss'],
@@ -45,7 +49,7 @@ export class ResourcesListComponent {
     return false;
   }
 
-  trackByFn(index, item): number {
+  trackByFn(index: number, item: any): number {
     return item.id;
   }
 }

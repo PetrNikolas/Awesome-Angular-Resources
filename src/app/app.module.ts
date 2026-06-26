@@ -5,7 +5,7 @@ import { COMPONENTS, IMPORTS, ROOT_COMPONENT, PROVIDERS } from './index';
 // import { environment } from '../environments/environment';
 
 @NgModule({
-  declarations: [...COMPONENTS],
+  declarations: [],
   imports: [
     ...IMPORTS,
     /**ServiceWorkerModule.register('/ngsw-worker.js', {

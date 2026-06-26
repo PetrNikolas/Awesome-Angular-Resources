@@ -1,3 +1,5 @@
+@use "../abstracts/functions";
+
 .filters {
   text-align: left;
   overflow: auto;
@@ -12,7 +14,7 @@
     }
 
     &.selected {
-      color: color(primary,2) !important;
+      color: functions.color(primary, 2) !important;
     }
   }
 }

@@ -4,6 +4,6 @@ import { COMPONENTS, IMPORTS } from '.';
 
 @NgModule({
   imports: [...IMPORTS],
-  declarations: [...COMPONENTS],
+  declarations: [],
 })
 export class CoursesModule {}
