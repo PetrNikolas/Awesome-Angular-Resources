@@ -1,26 +1,20 @@
 import { Resource } from '../models/resource.model';
 
 export const RESOURCES: Resource[] = [
-  // ... existing content ... 
+  // Add new resources here
   {
-    id: 79,
-    title: 'Taiga UI',
-    description: 'Powerful set of open source components for Angular',
-    link: 'https://taiga-ui.dev',
+    id: 82,
+    title: 'PrimeNG',
+    description: 'The Most Complete UI Component Library for Angular',
+    link: 'https://primeng.org/',
     type: 'lib',
   },
   {
-    id: 80,
-    title: 'Analog',
-    description: 'The fullstack meta-framework for Angular',
-    link: 'https://analogjs.org',
-    type: 'framework',
-  },
-  {
-    id: 81,
-    title: 'ngx-formly',
-    description: 'JSON powered / Dynamic forms for Angular',
-    link: 'https://formly.dev',
+    id: 83,
+    title: 'NG-ZORRO',
+    description: 'Angular UI Component Library based on Ant Design',
+    link: 'https://ng.ant.design/',
     type: 'lib',
-  }
+  },
+  // ... keep existing
 ];
