@@ -1,7 +1,7 @@
 import { Resource } from '../models/resource.model';
 
 export const RESOURCES: Resource[] = [
-  // Add new resources here
+  // All previous + new
   {
     id: 82,
     title: 'PrimeNG',
@@ -9,12 +9,12 @@ export const RESOURCES: Resource[] = [
     link: 'https://primeng.org/',
     type: 'lib',
   },
+  // ... (keep existing structure)
   {
-    id: 83,
-    title: 'NG-ZORRO',
-    description: 'Angular UI Component Library based on Ant Design',
-    link: 'https://ng.ant.design/',
-    type: 'lib',
-  },
-  // ... keep existing
+    id: 91,
+    title: 'NgRx Signals Integration',
+    description: 'State management with modern Angular Signals',
+    link: 'https://ngrx.io/guide/signals',
+    type: 'state',
+  }
 ];
