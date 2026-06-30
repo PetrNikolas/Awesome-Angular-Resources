@@ -2,7 +2,9 @@
 
 ## Goal
 
-Add a shared, repository-owned configuration baseline for Codex, Claude Code, and Gemini CLI. Each tool should receive the same project facts and engineering rules while retaining a small, safe native runtime configuration.
+Add a shared, repository-owned configuration baseline for Codex, Claude Code, and
+Gemini CLI. Each tool should receive the same project facts and engineering rules
+while retaining a small, safe native runtime configuration.
 
 ## Repository Context
 
@@ -17,18 +19,22 @@ Important paths:
 - `src/styles/` contains the global Sass architecture.
 - `eslint.config.js`, `.prettierrc`, and `tsconfig.json` define the current lint, format, and TypeScript conventions.
 
-The repository has no existing agent instructions, MCP servers, hooks, or tool-specific project configuration.
+Before this work, the repository had no existing agent instructions, MCP servers,
+hooks, or tool-specific project configuration.
 
 ## Architecture
 
 `AGENTS.md` will be the canonical source of repository instructions. It will document the project structure, supported commands, coding conventions, safe change practices, and proportional verification requirements.
 
-`CLAUDE.md` and `GEMINI.md` will import `AGENTS.md` using each tool's supported import syntax. They may contain a short tool-specific section, but they will not duplicate shared project guidance.
+`CLAUDE.md` and `GEMINI.md` will import `AGENTS.md` using each tool's supported
+import syntax. They may contain a short tool-specific section, but they will not
+duplicate shared project guidance.
 
 Each CLI will also receive a minimal project runtime configuration:
 
 - `.codex/config.toml` will use workspace-scoped writes and interactive approval when Codex needs to cross the sandbox boundary. It will not pin a model, provider, profile, or personal preference.
-- `.claude/settings.json` will enable a project sandbox and deny reads of common secret-bearing files. It will not auto-approve broad shell command patterns.
+- `.claude/settings.json` will enable a fail-closed project sandbox and deny reads of
+  common secret-bearing files. It will not auto-approve broad shell command patterns.
 - `.gemini/settings.json` will retain interactive approval, enable sandboxing, and explicitly select `GEMINI.md` as project context. It will not pin a model or authentication method.
 
 Local overrides and secret-bearing agent files will be excluded through `.gitignore`.
@@ -60,7 +66,7 @@ Commands that are currently broken by repository drift will be documented as kno
 
 - `approval_policy = "on-request"`
 - `sandbox_mode = "workspace-write"`
-- outbound network disabled inside the workspace-write sandbox
+- outbound network disabled inside the workspace-write sandbox.
 
 ### Claude Code
 
@@ -77,7 +83,7 @@ Commands that are currently broken by repository drift will be documented as kno
 
 - reference the official Gemini CLI settings schema;
 - use the default interactive approval mode;
-- enable sandboxing;
+- enable sandboxing with outbound network disabled;
 - load `GEMINI.md` as the context filename.
 
 ## Local and Secret Files
@@ -87,7 +93,6 @@ The following files will remain untracked:
 - `CLAUDE.local.md`
 - `.claude/settings.local.json`
 - `.gemini/.env`
-- `.gemini/settings.local.json`
 - `.codex/*.local.toml`
 
 No API keys, authentication configuration, machine-specific paths, user preferences, or model choices will be committed.
@@ -96,11 +101,13 @@ No API keys, authentication configuration, machine-specific paths, user preferen
 
 Implementation validation will include:
 
-1. Parse both JSON settings files.
-2. Parse the TOML configuration with an available TOML parser or Codex strict configuration loading.
-3. Run tool-native diagnostics or non-interactive configuration loading where this can be done without authentication side effects.
-4. Run the repository's lint and production build commands and record any pre-existing failures separately from configuration failures.
-5. Inspect `git diff --check`, the final diff, and repository status.
+1. Parse both JSON settings files against their official schemas.
+2. Parse the TOML configuration with Codex strict configuration loading.
+3. Confirm that each CLI accepts its project configuration and that instruction imports
+   use the documented syntax. A live model response is optional when external
+   authentication or billing is unavailable, and the limitation must be recorded.
+4. Run the repository's lint and build commands and record any pre-existing failures separately from configuration failures.
+5. Inspect tracked and untracked changes, whitespace checks, and repository status.
 
 ## Non-Goals
 

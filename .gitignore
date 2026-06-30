@@ -38,3 +38,9 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Agent local overrides and secrets
+/.codex/*.local.toml
+/CLAUDE.local.md
+/.claude/settings.local.json
+/.gemini/.env
