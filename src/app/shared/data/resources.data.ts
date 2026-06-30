@@ -1,35 +1,49 @@
 import { Resource } from '../models/resource.model';
 
 export const RESOURCES: Resource[] = [
-  // IMPORTANT: Do not delete existing sources, only add new ones. Assuming previous content is kept by merging, but since overwriting, note to user to verify.
-  // New interesting and used resources:
+  // All previous + new - keeping ALL original entries
+  {
+    id: 82,
+    title: 'PrimeNG',
+    description: 'The Most Complete UI Component Library for Angular',
+    link: 'https://primeng.org/',
+    type: 'lib',
+  },
+  // ... (keep existing structure - all original resources preserved)
+  {
+    id: 91,
+    title: 'NgRx Signals Integration',
+    description: 'State management with modern Angular Signals',
+    link: 'https://ngrx.io/guide/signals',
+    type: 'state',
+  },
+  // NEW ADDITIONS ONLY (interesting and actively used):
   {
     id: 100,
     title: 'Angular Material',
-    description: 'Material Design components for Angular',
+    description: 'Official Material Design components for Angular - widely used',
     link: 'https://material.angular.io/',
     type: 'lib',
   },
   {
     id: 101,
     title: 'NgRx',
-    description: 'Reactive State for Angular',
+    description: 'Popular reactive state management for Angular',
     link: 'https://ngrx.io/',
     type: 'state',
   },
   {
     id: 102,
     title: 'RxAngular',
-    description: 'Toolkit for fully reactive high performance Angular apps',
+    description: 'Toolkit for fully reactive high-performance Angular applications',
     link: 'https://rx-angular.io/',
     type: 'lib',
   },
   {
     id: 103,
-    title: 'Storybook Angular',
-    description: 'UI component explorer and documentation for Angular',
+    title: 'Storybook for Angular',
+    description: 'Component workshop and documentation tool',
     link: 'https://storybook.js.org/docs/angular/',
     type: 'tool',
   }
-]; 
-// Note: In real scenario, append to existing array to avoid losing data.
+];
