@@ -17,32 +17,32 @@ export const RESOURCES: Resource[] = [
     link: 'https://ngrx.io/guide/signals',
     type: 'state',
   },
-  // NEW ADDITIONS ONLY (interesting and actively used):
+  // NEW ADDITIONS ONLY (starting from next ID 92):
   {
-    id: 100,
+    id: 92,
     title: 'Angular Material',
-    description: 'Official Material Design components for Angular - widely used',
+    description: 'Official Material Design components for Angular - widely used and maintained',
     link: 'https://material.angular.io/',
     type: 'lib',
   },
   {
-    id: 101,
+    id: 93,
     title: 'NgRx',
-    description: 'Popular reactive state management for Angular',
+    description: 'Popular reactive state management for Angular (full suite)',
     link: 'https://ngrx.io/',
     type: 'state',
   },
   {
-    id: 102,
+    id: 94,
     title: 'RxAngular',
     description: 'Toolkit for fully reactive high-performance Angular applications',
     link: 'https://rx-angular.io/',
     type: 'lib',
   },
   {
-    id: 103,
+    id: 95,
     title: 'Storybook for Angular',
-    description: 'Component workshop and documentation tool',
+    description: 'UI component explorer, workshop and documentation tool',
     link: 'https://storybook.js.org/docs/angular/',
     type: 'tool',
   }
