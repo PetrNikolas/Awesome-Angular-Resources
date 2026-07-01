@@ -45,5 +45,33 @@ export const RESOURCES: Resource[] = [
     description: 'UI component explorer, workshop and documentation tool',
     link: 'https://storybook.js.org/docs/angular/',
     type: 'tool',
+  },
+  {
+    id: 96,
+    title: 'Angular CDK',
+    description: 'Component Dev Kit for building high-quality Angular components',
+    link: 'https://material.angular.io/cdk/categories',
+    type: 'lib',
+  },
+  {
+    id: 97,
+    title: '@tanstack/angular-query',
+    description: 'Powerful data synchronization for Angular (TanStack Query)',
+    link: 'https://tanstack.com/query/latest/docs/framework/angular/overview',
+    type: 'state',
+  },
+  {
+    id: 98,
+    title: 'NGX-Translate',
+    description: 'Internationalization (i18n) library for Angular',
+    link: 'https://github.com/ngx-translate/core',
+    type: 'lib',
+  },
+  {
+    id: 99,
+    title: 'Angular Universal',
+    description: 'Server-side rendering for Angular apps',
+    link: 'https://angular.dev/guide/ssr',
+    type: 'tool',
   }
 ];
