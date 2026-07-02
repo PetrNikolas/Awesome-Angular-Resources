@@ -82,6 +82,8 @@ production option, while `yarn build` succeeds with a deprecation warning for th
 Webpack `browser` builder. The headless unit command also currently fails because
 `src/test.ts` imports the no-longer-exported `zone.js/dist/zone-testing` path.
 `yarn e2e` currently fails because its Protractor builder is no longer available.
+`yarn lint` currently succeeds with nine pre-existing warnings and checks the same
+`src` patterns for both configured Angular projects.
 Treat these as known infrastructure limitations unless the task changes build or test
 configuration. If another command fails, distinguish a pre-existing failure from a
 regression caused by the current change.
