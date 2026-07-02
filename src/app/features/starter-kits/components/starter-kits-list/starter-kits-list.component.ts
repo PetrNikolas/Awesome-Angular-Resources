@@ -26,7 +26,7 @@ export class StarterKitsListComponent {
     return false;
   }
 
-  trackByFn(index: number, item: any): number {
+  trackByFn(index: number, item: StarterKit): number {
     return item.id;
   }
 }

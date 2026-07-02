@@ -26,7 +26,7 @@ export class CoursesListComponent {
     return false;
   }
 
-  trackByFn(index: number, item: any): number {
+  trackByFn(index: number, item: Course): number {
     return item.id;
   }
 }

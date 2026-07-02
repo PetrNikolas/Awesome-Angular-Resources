@@ -15,26 +15,29 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^22.0.3",
-    "@angular/cdk": "22.0.2",
-    "@angular/common": "^22.0.3",
-    "@angular/compiler": "^22.0.3",
-    "@angular/core": "^22.0.3",
-    "@angular/forms": "^22.0.3",
-    "@angular/http": "^7.2.16",
-    "@angular/platform-browser": "^22.0.3",
-    "@angular/platform-browser-dynamic": "^22.0.3",
-    "@angular/pwa": "22.0.4",
-    "@angular/router": "^22.0.3",
-    "@angular/service-worker": "^22.0.3",
-    "animate.css": "3.7.0",
+    "@angular/animations": "^22.0.5",
+    "@angular/cdk": "22.0.3",
+    "@angular/common": "^22.0.5",
+    "@angular/compiler": "^22.0.5",
+    "@angular/core": "^22.0.5",
+    "@angular/forms": "^22.0.5",
+    "@angular/platform-browser": "^22.0.5",
+    "@angular/platform-browser-dynamic": "^22.0.5",
+    "@angular/pwa": "22.0.5",
+    "@angular/router": "^22.0.5",
+    "@angular/service-worker": "^22.0.5",
+    "animate.css": "4.1.1",
     "classlist.js": "1.1.20150312",
-    "core-js": "^2.5.4",
+    "core-js": "3.49.0",
     "ng2-adsense": "5.4.3",
     "rxjs": "7.8.2",
     "web-animations-js": "2.3.1",
     "zone.js": "^0.16.2"
   },
+
+
+
+
   "devDependencies": {
     "@angular-devkit/build-angular": "^22.0.0",
     "@angular-eslint/builder": "^22.0.0",
@@ -52,7 +55,7 @@
     "@typescript-eslint/parser": "^8.62.0",
     "@typescript-eslint/types": "^8",
     "@typescript-eslint/utils": "^8",
-    "codelyzer": "~4.2.1",
+
     "eslint": "^10.5.0",
     "husky": "3.0.5",
     "jasmine-core": "~2.99.1",
@@ -65,10 +68,10 @@
     "npm-run-all": "4.1.5",
     "prettier": "1.18.2",
     "pretty-quick": "1.11.1",
-    "protractor": "~5.3.0",
+
     "ts-node": "~5.0.1",
-    "tslint": "~5.9.1",
-    "tslint-config-prettier": "1.18.0",
+
+
     "typescript": "~6.0.3"
   }
 }

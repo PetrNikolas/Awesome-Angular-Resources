@@ -49,7 +49,7 @@ export class ResourcesListComponent {
     return false;
   }
 
-  trackByFn(index: number, item: any): number {
+  trackByFn(index: number, item: Resource): number {
     return item.id;
   }
 }
