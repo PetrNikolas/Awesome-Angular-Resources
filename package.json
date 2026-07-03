@@ -6,72 +6,64 @@
     "build": "yarn ng build",
     "build-prod": "yarn ng build --configuration production",
     "ci": "yarn format:write && yarn format:fix && yarn lint && yarn test",
-    "e2e": "yarn ng e2e",
+    "e2e": "playwright test",
     "format:write": "prettier --config './.prettierrc' {src,e2e}/**/*.{ts,json,md,scss} --write",
     "format:fix": "pretty-quick --staged",
     "lint": "yarn ng lint",
     "start": "yarn ng serve",
-    "test": "yarn ng test"
+    "test": "jest"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^22.0.5",
-    "@angular/cdk": "22.0.3",
-    "@angular/common": "^22.0.5",
-    "@angular/compiler": "^22.0.5",
-    "@angular/core": "^22.0.5",
-    "@angular/forms": "^22.0.5",
-    "@angular/platform-browser": "^22.0.5",
-    "@angular/platform-browser-dynamic": "^22.0.5",
-    "@angular/pwa": "22.0.5",
-    "@angular/router": "^22.0.5",
-    "@angular/service-worker": "^22.0.5",
-    "animate.css": "4.1.1",
-    "classlist.js": "1.1.20150312",
-    "core-js": "3.49.0",
-    "ng2-adsense": "5.4.3",
-    "rxjs": "7.8.2",
-    "web-animations-js": "2.3.1",
-    "zone.js": "^0.16.2"
+    "@angular/animations": "^22.0.0",
+    "@angular/cdk": "^22.0.0",
+    "@angular/common": "^22.0.0",
+    "@angular/compiler": "^22.0.0",
+    "@angular/core": "^22.0.0",
+    "@angular/forms": "^22.0.0",
+    "@angular/platform-browser": "^22.0.0",
+    "@angular/platform-browser-dynamic": "^22.0.0",
+    "@angular/pwa": "22.0.0",
+    "@angular/router": "^22.0.0",
+    "@angular/service-worker": "^22.0.0",
+    "animate.css": "^4.1.1",
+    "classlist.js": "^1.1.20150312",
+    "core-js": "^3.49.0",
+    "ng2-adsense": "^5.4.3",
+    "rxjs": "^7.8.2",
+    "web-animations-js": "^2.3.1",
+    "zone.js": "^0.14.0"
   },
 
 
 
 
   "devDependencies": {
+
     "@angular-devkit/build-angular": "^22.0.0",
     "@angular-eslint/builder": "^22.0.0",
     "@angular-eslint/eslint-plugin": "^22.0.0",
     "@angular-eslint/eslint-plugin-template": "^22.0.0",
     "@angular-eslint/schematics": "^22.0.0",
     "@angular-eslint/template-parser": "^22.0.0",
-    "@angular/cli": "^22.0.4",
-    "@angular/compiler-cli": "^22.0.3",
-    "@angular/language-service": "^22.0.3",
-    "@types/jasmine": "~2.8.6",
-    "@types/jasminewd2": "~2.0.3",
-    "@types/mocha": "5.2.7",
+
+    "@angular/cli": "^22.0.0",
+    "@angular/compiler-cli": "^22.0.0",
+    "@angular/language-service": "^22.0.0",
     "@typescript-eslint/eslint-plugin": "^8.62.0",
     "@typescript-eslint/parser": "^8.62.0",
-    "@typescript-eslint/types": "^8",
-    "@typescript-eslint/utils": "^8",
-
     "eslint": "^10.5.0",
     "husky": "3.0.5",
-    "jasmine-core": "~2.99.1",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~1.7.1",
-    "karma-chrome-launcher": "~2.2.0",
-    "karma-coverage-istanbul-reporter": "~1.4.2",
-    "karma-jasmine": "~1.1.1",
-    "karma-jasmine-html-reporter": "^0.2.2",
-    "npm-run-all": "4.1.5",
     "prettier": "1.18.2",
     "pretty-quick": "1.11.1",
-
     "ts-node": "~5.0.1",
+    "jest-preset-angular": "^17.0.0",
+    "jest": "^30.0.0",
+    "jsdom": "^26.0.0",
+    "typescript": "^6.0.0",
 
-
-    "typescript": "~6.0.3"
+    "ts-jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "@playwright/test": "^1.40.0"
   }
 }
