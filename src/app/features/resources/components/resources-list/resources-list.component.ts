@@ -22,8 +22,7 @@ export class ResourcesListComponent {
   readonly TYPE_COMMUNITY = 'community';
   readonly TYPE_OTHER = 'other';
 
-  selectedTab$ = this.TYPE_ALL;
-
+  selectedTab = this.TYPE_ALL;
   resources$: Resource[];
   queryString = '';
 
@@ -32,20 +31,34 @@ export class ResourcesListComponent {
   }
 
   filterHandler(type: string): void {
-    this.selectedTab$ = type;
-    const data = RESOURCES;
+    this.selectedTab = type;
+    this.applyFilters();
+  }
 
-    if (type === 'all') {
-      this.resources$ = data;
-      return;
+  onSearchQueryChange(query: string): void {
+    this.queryString = query;
+    this.applyFilters();
+  }
+
+  private applyFilters(): void {
+    let filtered = RESOURCES;
+
+    if (this.selectedTab !== this.TYPE_ALL) {
+      filtered = filtered.filter(item => item.type === this.selectedTab);
     }
 
-    this.resources$ = data.filter(item => item.type === type);
-    return;
+    if (this.queryString) {
+      const query = this.queryString.toLowerCase();
+      filtered = filtered.filter(item =>
+        item.title.toLowerCase().includes(query) || item.description.toLowerCase().includes(query)
+      );
+    }
+
+    this.resources$ = filtered;
   }
 
   redirect(link: string): false {
-    window.open(link, '_blank');
+    window.open(link, '_blank', 'noopener,noreferrer');
     return false;
   }
 

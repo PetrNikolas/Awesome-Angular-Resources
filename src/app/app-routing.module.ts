@@ -1,11 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ResourcesComponent } from '@features/resources/components';
-import { HomeComponent } from '@features/home/components';
-import { StarterKitsComponent } from '@features/starter-kits/components';
-import { CoursesComponent } from '@features/courses/components';
-
 const routes: Routes = [
   {
     path: '',
@@ -14,20 +9,21 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomeComponent,
-    pathMatch: 'full',
+    loadComponent: () => import('@features/home/components').then((m) => m.HomeComponent),
   },
   {
     path: 'resources',
-    component: ResourcesComponent,
+    loadComponent: () =>
+      import('@features/resources/components').then((m) => m.ResourcesComponent),
   },
   {
     path: 'starter-kits',
-    component: StarterKitsComponent,
+    loadComponent: () =>
+      import('@features/starter-kits/components').then((m) => m.StarterKitsComponent),
   },
   {
     path: 'courses',
-    component: CoursesComponent,
+    loadComponent: () => import('@features/courses/components').then((m) => m.CoursesComponent),
   },
   {
     path: '**',

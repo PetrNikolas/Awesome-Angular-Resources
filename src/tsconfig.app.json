@@ -2,7 +2,8 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app",
-    "types": []
+    "types": [],
+    "ignoreDeprecations": "6.0"
   },
   "exclude": [
     "test.ts",

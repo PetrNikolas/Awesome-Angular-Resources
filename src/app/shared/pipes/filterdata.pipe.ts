@@ -11,8 +11,10 @@ export class FilterdataPipe implements PipeTransform {
       return value;
     }
 
+    const query = args.toLocaleLowerCase();
+
     return value.filter((val: Resource) => {
-      const rVal = val.title.toLocaleLowerCase().includes(args) || val.description.toLocaleLowerCase().includes(args);
+      const rVal = val.title.toLocaleLowerCase().includes(query) || val.description.toLocaleLowerCase().includes(query);
       return rVal;
     });
   }
