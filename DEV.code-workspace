@@ -20,7 +20,7 @@
       "**/tsconfig.json": true,
       "**/tsconfig.spec.json": true,
       "**/tslint.json": true,
-      "**/yarn.lock": true,
+      "**/pnpm-lock.yaml": true,
     },
     "editor.wordWrapColumn": 120
   }

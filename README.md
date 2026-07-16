@@ -5,11 +5,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Getting started
 
 - Clone this repo.
-- Install dependencies with `yarn` command.
+- Install dependencies with `pnpm install` command.
 
 ### Development server
 
-Run `yarn start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `pnpm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ### Code scaffolding
 
@@ -17,19 +17,19 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ### Build
 
-Run `yarn build` to build the project. The build artifacts will be stored in the `dist/` directory. Use `yarn build-prod` for a production build.
+Run `pnpm build` to build the project. The build artifacts will be stored in the `dist/` directory. Use `pnpm build-prod` for a production build.
 
 ### Running unit tests
 
-Run `yarn test` to execute the unit tests via [Jest](https://jestjs.io/).
+Run `pnpm test` to execute the unit tests via [Jest](https://jestjs.io/).
 
 ### Running end-to-end tests
 
-Run `yarn e2e` to execute the end-to-end tests via [Playwright](https://playwright.dev/).
+Run `pnpm e2e` to execute the end-to-end tests via [Playwright](https://playwright.dev/).
 
 ### Linting
 
-Run `yarn lint` to run ESLint on the project.
+Run `pnpm lint` to run ESLint on the project.
 
 ## Project Structure
 

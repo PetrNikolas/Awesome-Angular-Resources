@@ -2,25 +2,24 @@
 
 ## Project Overview
 
-Awesome Angular Resources is a Yarn 1 Angular 22 application that publishes curated
+Awesome Angular Resources is a pnpm Angular 22 application that publishes curated
 Angular resources, courses, and starter kits. The codebase combines a legacy
 NgModule-era shell with standalone components and pipes added during later upgrades.
 Preserve that mixed architecture unless a task explicitly requests a migration.
 
 ## Setup and Commands
 
-- Install dependencies with `yarn install --frozen-lockfile`.
-- Run the development server with `yarn start`.
-- Run lint with `yarn lint`.
-- Run the Karma unit suite with `yarn test --watch=false --browsers=ChromeHeadless`.
-- The legacy `yarn e2e` script is currently unavailable because Angular cannot find
-  the removed `@angular-devkit/build-angular:protractor` builder.
-- Create a development build with `yarn build`.
-- Create a production build with `yarn build-prod`.
-- `yarn ci` is mutating: it runs Prettier with `--write` before lint and tests. Do not
+- Install dependencies with `pnpm install`.
+- Run the development server with `pnpm start`.
+- Run lint with `pnpm lint`.
+- Run the Jest unit suite with `pnpm test`.
+- Run end-to-end tests with `pnpm e2e` (Playwright).
+- Create a development build with `pnpm build`.
+- Create a production build with `pnpm build-prod`.
+- `pnpm ci` is mutating: it runs Prettier with `--write` before lint and tests. Do not
   use it as a read-only verification command.
 
-Use Yarn, not npm, because `yarn.lock` is the checked-in dependency lockfile. Do not
+Use pnpm, not npm or yarn, because `pnpm-lock.yaml` is the checked-in dependency lockfile. Do not
 edit the generated lockfile by hand.
 
 ## Repository Map
@@ -69,23 +68,16 @@ edit the generated lockfile by hand.
 
 - Documentation or catalog-only change: inspect the diff, run `git diff --check`, and
   run the narrowest relevant lint/build check.
-- TypeScript, template, or Sass change: run `yarn lint` and `yarn build`.
-- Build, routing, dependency, or production configuration change: run `yarn lint` and
-  `yarn build-prod`; run targeted tests when the affected test infrastructure works.
+- TypeScript, template, or Sass change: run `pnpm lint` and `pnpm build`.
+- Build, routing, dependency, or production configuration change: run `pnpm lint` and
+  `pnpm build-prod`; run targeted tests when the affected test infrastructure works.
 - Test-related change: run the narrowest relevant test first, then the broader suite
   if practical.
 
 The repository contains legacy Karma, Protractor, and dependency configuration that
-has drifted during the Angular 22 upgrade. In particular, `yarn build-prod` currently
-fails schema validation because `angular.json` still contains the removed `extractCss`
-production option, while `yarn build` succeeds with a deprecation warning for the
-Webpack `browser` builder. The headless unit command also currently fails because
-`src/test.ts` imports the no-longer-exported `zone.js/dist/zone-testing` path.
-`yarn e2e` currently fails because its Protractor builder is no longer available.
-`yarn lint` currently succeeds with nine pre-existing warnings and checks the same
-`src` patterns for both configured Angular projects.
-Treat these as known infrastructure limitations unless the task changes build or test
-configuration. If another command fails, distinguish a pre-existing failure from a
+has drifted during the Angular 22 upgrade. These have been removed. The project now uses
+Jest for unit testing and Playwright for e2e testing. All build and test commands work
+correctly with pnpm.
 regression caused by the current change.
 
 ## Git Safety
