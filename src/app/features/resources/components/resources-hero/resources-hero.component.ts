@@ -1,9 +1,11 @@
-import { SharedModule } from '@shared/shared.module';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { SectionComponent } from '@shared/components/section/section.component';
+import { ContainerComponent } from '@shared/components/container/container.component';
 
 @Component({
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, RouterModule, SectionComponent, ContainerComponent],
   standalone: true,
   selector: 'app-hero',
   templateUrl: './resources-hero.component.html',

@@ -1,11 +1,11 @@
 import { ResourcesHeroComponent } from '../resources-hero/resources-hero.component';
 import { ResourcesListComponent } from '../resources-list/resources-list.component';
-import { SharedModule } from '@shared/shared.module';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  imports: [CommonModule, SharedModule, ResourcesHeroComponent, ResourcesListComponent],
+  imports: [CommonModule, RouterModule, ResourcesHeroComponent, ResourcesListComponent],
   standalone: true,
   selector: 'app-resources',
   templateUrl: './resources.component.html',

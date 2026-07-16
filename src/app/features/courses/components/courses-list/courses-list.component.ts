@@ -1,12 +1,16 @@
-import { SharedModule } from '@shared/shared.module';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { SectionComponent } from '@shared/components/section/section.component';
+import { ContainerComponent } from '@shared/components/container/container.component';
+import { ScrollTopComponent } from '@shared/components/scroll-top/scroll-top.component';
 
 import { Course } from '@models/course.model';
 import { COURSES } from '@data/courses.data';
 
 @Component({
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, RouterModule, FormsModule, SectionComponent, ContainerComponent, ScrollTopComponent],
   standalone: true,
   selector: 'app-courses-list',
   templateUrl: './courses-list.component.html',

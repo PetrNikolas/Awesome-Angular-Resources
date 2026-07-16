@@ -1,12 +1,16 @@
-import { SharedModule } from '@shared/shared.module';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { SectionComponent } from '@shared/components/section/section.component';
+import { ContainerComponent } from '@shared/components/container/container.component';
+import { ScrollTopComponent } from '@shared/components/scroll-top/scroll-top.component';
 
 import { StarterKit } from '@models/starter-kit.model';
 import { STARTERS } from '@data/starter-kits.data';
 
 @Component({
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, RouterModule, FormsModule, SectionComponent, ContainerComponent, ScrollTopComponent],
   standalone: true,
   selector: 'app-starter-kits-list',
   templateUrl: './starter-kits-list.component.html',

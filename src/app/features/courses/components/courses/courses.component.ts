@@ -1,11 +1,11 @@
 import { CoursesHeroComponent } from '../courses-hero/courses-hero.component';
 import { CoursesListComponent } from '../courses-list/courses-list.component';
-import { SharedModule } from '@shared/shared.module';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  imports: [CommonModule, SharedModule, CoursesHeroComponent, CoursesListComponent],
+  imports: [CommonModule, RouterModule, CoursesHeroComponent, CoursesListComponent],
   standalone: true,
   selector: 'app-courses',
   templateUrl: './courses.component.html',

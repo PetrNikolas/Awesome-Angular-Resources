@@ -1,9 +1,9 @@
-import { SharedModule } from '@shared/shared.module';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, RouterModule],
   standalone: true,
   selector: 'app-home-boxes',
   templateUrl: './home-boxes.component.html',

@@ -7,7 +7,7 @@
     "build-prod": "yarn ng build --configuration production",
     "ci": "yarn format:write && yarn format:fix && yarn lint && yarn test",
     "e2e": "playwright test",
-    "format:write": "prettier --config './.prettierrc' {src,e2e}/**/*.{ts,json,md,scss} --write",
+    "format:write": "prettier --config './.prettierrc' src/**/*.{ts,json,md,scss} --write",
     "format:fix": "pretty-quick --staged",
     "lint": "yarn ng lint",
     "start": "yarn ng serve",

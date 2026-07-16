@@ -6,7 +6,6 @@
     "ignoreDeprecations": "6.0"
   },
   "exclude": [
-    "test.ts",
     "**/*.spec.ts",
     "app/shared/data/index.ts",
     "app/shared/models/index.ts",

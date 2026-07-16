@@ -1,12 +1,16 @@
-import { SharedModule } from '@shared/shared.module';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { ScrollTopComponent } from '@shared/components/scroll-top/scroll-top.component';
+import { SectionComponent } from '@shared/components/section/section.component';
+import { ContainerComponent } from '@shared/components/container/container.component';
 
 import { Resource } from '@shared/models/resource.model';
 import { RESOURCES } from '@data/resources.data';
 
 @Component({
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, RouterModule, FormsModule, ScrollTopComponent, SectionComponent, ContainerComponent],
   standalone: true,
   selector: 'app-resources-list',
   templateUrl: './resources-list.component.html',
