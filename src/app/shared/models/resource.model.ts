@@ -1,7 +1,5 @@
-export interface Resource {
-  id: number;
-  title: string;
-  description: string;
-  link: string;
+import { BaseResource } from './base-resource.model';
+
+export interface Resource extends BaseResource {
   type: string;
 }

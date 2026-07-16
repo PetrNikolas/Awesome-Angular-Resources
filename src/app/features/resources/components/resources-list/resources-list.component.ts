@@ -9,8 +9,10 @@ import { ContainerComponent } from '@shared/components/container/container.compo
 import { Resource } from '@shared/models/resource.model';
 import { RESOURCES } from '@data/resources.data';
 
+import { CatalogGridComponent } from '@shared/components/catalog-grid/catalog-grid.component';
+
 @Component({
-  imports: [CommonModule, RouterModule, FormsModule, ScrollTopComponent, SectionComponent, ContainerComponent],
+  imports: [CommonModule, FormsModule, SectionComponent, ContainerComponent, ScrollTopComponent, CatalogGridComponent],
   standalone: true,
   selector: 'app-resources-list',
   templateUrl: './resources-list.component.html',
@@ -59,14 +61,5 @@ export class ResourcesListComponent {
     }
 
     this.resources$ = filtered;
-  }
-
-  redirect(link: string): false {
-    window.open(link, '_blank', 'noopener,noreferrer');
-    return false;
-  }
-
-  trackByFn(index: number, item: Resource): number {
-    return item.id;
   }
 }

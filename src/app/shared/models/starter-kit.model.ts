@@ -1,6 +1,3 @@
-export interface StarterKit {
-  id: number;
-  title: string;
-  description: string;
-  link: string;
-}
+import { BaseResource } from './base-resource.model';
+
+export interface StarterKit extends BaseResource {}

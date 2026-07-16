@@ -9,8 +9,10 @@ import { ScrollTopComponent } from '@shared/components/scroll-top/scroll-top.com
 import { StarterKit } from '@models/starter-kit.model';
 import { STARTERS } from '@data/starter-kits.data';
 
+import { CatalogGridComponent } from '@shared/components/catalog-grid/catalog-grid.component';
+
 @Component({
-  imports: [CommonModule, RouterModule, FormsModule, SectionComponent, ContainerComponent, ScrollTopComponent],
+  imports: [CommonModule, SectionComponent, ContainerComponent, ScrollTopComponent, CatalogGridComponent],
   standalone: true,
   selector: 'app-starter-kits-list',
   templateUrl: './starter-kits-list.component.html',
@@ -23,14 +25,5 @@ export class StarterKitsListComponent {
 
   constructor() {
     this.starters$ = STARTERS;
-  }
-
-  redirect(link: string): false {
-    window.open(link, '_blank');
-    return false;
-  }
-
-  trackByFn(index: number, item: StarterKit): number {
-    return item.id;
   }
 }

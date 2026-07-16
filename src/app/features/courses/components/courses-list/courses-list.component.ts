@@ -9,8 +9,10 @@ import { ScrollTopComponent } from '@shared/components/scroll-top/scroll-top.com
 import { Course } from '@models/course.model';
 import { COURSES } from '@data/courses.data';
 
+import { CatalogGridComponent } from '@shared/components/catalog-grid/catalog-grid.component';
+
 @Component({
-  imports: [CommonModule, RouterModule, FormsModule, SectionComponent, ContainerComponent, ScrollTopComponent],
+  imports: [CommonModule, SectionComponent, ContainerComponent, ScrollTopComponent, CatalogGridComponent],
   standalone: true,
   selector: 'app-courses-list',
   templateUrl: './courses-list.component.html',
@@ -23,14 +25,5 @@ export class CoursesListComponent {
 
   constructor() {
     this.courses$ = COURSES;
-  }
-
-  redirect(link: string): false {
-    window.open(link, '_blank');
-    return false;
-  }
-
-  trackByFn(index: number, item: Course): number {
-    return item.id;
   }
 }

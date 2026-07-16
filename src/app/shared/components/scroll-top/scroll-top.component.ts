@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ChangeDetectionStrategy, Inject, HostListener } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Inject, HostListener, ChangeDetectorRef } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
 @Component({
@@ -14,18 +14,24 @@ export class ScrollTopComponent {
   windowScrolled: boolean = false;
 
   // tslint:disable-next-line: deprecation
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+  constructor(@Inject(DOCUMENT) private document: Document, private cdr: ChangeDetectorRef) {}
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
     if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 100) {
-      this.windowScrolled = true;
+      if (!this.windowScrolled) {
+        this.windowScrolled = true;
+        this.cdr.markForCheck();
+      }
     } else if (
       (this.windowScrolled && window.pageYOffset) ||
       document.documentElement.scrollTop ||
       document.body.scrollTop < 10
     ) {
-      this.windowScrolled = false;
+      if (this.windowScrolled) {
+        this.windowScrolled = false;
+        this.cdr.markForCheck();
+      }
     }
   }
 

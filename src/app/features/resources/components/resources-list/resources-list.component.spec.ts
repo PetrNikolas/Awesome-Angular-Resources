@@ -48,8 +48,5 @@ describe('ResourcesListComponent', () => {
     expect(component.resources$.length).toBeGreaterThan(filteredLength);
   });
 
-  it('should track by id', () => {
-    const resource: Resource = { id: 1, title: 'Test', description: 'Test', link: 'http://test.com', type: 'lib' };
-    expect(component.trackByFn(0, resource)).toBe(1);
-  });
+  // Removed trackByFn test since it was migrated to CatalogGridComponent
 });

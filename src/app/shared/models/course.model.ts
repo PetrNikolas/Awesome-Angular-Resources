@@ -1,6 +1,3 @@
-export interface Course {
-  id: number;
-  title: string;
-  description: string;
-  link: string;
-}
+import { BaseResource } from './base-resource.model';
+
+export interface Course extends BaseResource {}

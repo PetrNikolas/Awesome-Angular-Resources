@@ -7,6 +7,7 @@
   },
   "exclude": [
     "**/*.spec.ts",
+    "setup-jest.ts",
     "app/shared/data/index.ts",
     "app/shared/models/index.ts",
     "environments/environment.prod.ts"

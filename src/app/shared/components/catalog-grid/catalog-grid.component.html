@@ -1,0 +1,14 @@
+<div class="resources-wrap">
+  <div
+    *ngFor="let item of items; trackBy: trackByFn"
+    class="resource text-center is-revealing"
+  >
+    <div class="resource-inner" (click)="redirect(item.link)">
+      <h4 class="resource-title h3-mobile mb-8">{{ item.title }}</h4>
+      <p class="text-sm">{{ item.description }}</p>
+      <p class="text-sm" *ngIf="displayType && isResource(item)">
+        <small>#{{ item.type }}</small>
+      </p>
+    </div>
+  </div>
+</div>
