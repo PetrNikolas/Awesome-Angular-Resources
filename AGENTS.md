@@ -3,9 +3,9 @@
 ## Project Overview
 
 Awesome Angular Resources is a pnpm Angular 22 application that publishes curated
-Angular resources, courses, and starter kits. The codebase combines a legacy
-NgModule-era shell with standalone components and pipes added during later upgrades.
-Preserve that mixed architecture unless a task explicitly requests a migration.
+Angular resources, courses, and starter kits. The codebase is built entirely using
+standalone components and modern Angular primitives. Preserve this modern architecture
+when making changes.
 
 ## Setup and Commands
 
@@ -25,7 +25,7 @@ edit the generated lockfile by hand.
 ## Repository Map
 
 - `src/app/core/`: application shell, header, and footer.
-- `src/app/features/`: routed feature modules and their standalone components.
+- `src/app/features/`: routed feature components.
 - `src/app/shared/components/`: reusable standalone UI components.
 - `src/app/shared/data/`: resource, course, and starter-kit catalogs.
 - `src/app/shared/models/`: catalog item interfaces.
@@ -41,8 +41,7 @@ edit the generated lockfile by hand.
 - Inspect `git status` before editing and preserve unrelated user changes.
 - Make the smallest change that satisfies the task. Do not combine catalog updates or
   bug fixes with broad Angular, dependency, testing, or styling migrations.
-- Follow the pattern in the nearest file. Some areas still use NgModules while many
-  leaf components and pipes are standalone.
+- Follow the pattern in the nearest file. All components and pipes are standalone.
 - Use the configured `@core`, `@data`, `@features`, `@models`, and `@shared` aliases
   for cross-area imports. Keep short same-area imports relative.
 - Keep components focused, use `ChangeDetectionStrategy.OnPush` where the surrounding

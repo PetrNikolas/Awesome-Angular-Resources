@@ -1,6 +1,4 @@
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { SectionComponent } from '@shared/components/section/section.component';
 import { ContainerComponent } from '@shared/components/container/container.component';

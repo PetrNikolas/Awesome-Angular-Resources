@@ -1,5 +1,4 @@
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { ScrollTopComponent } from '@shared/components/scroll-top/scroll-top.component';
