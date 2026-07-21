@@ -12,5 +12,9 @@ When changing catalog entries:
 - Use `- [Name](URL) — concise description`.
 - Keep the existing `_(type)_` suffix on Resource entries.
 - Keep cross-category duplicates when they are intentional.
+- Keep only actively maintained projects. Verify archive, deprecation, migration,
+  and Angular-version status from official sources or package metadata.
+- Do not infer that a stable project is unmaintained from commit frequency alone.
+- Prefer an official active successor when a resource has moved or merged.
 - Verify changed URLs when network access is available.
 - Keep changes narrow and run `git diff --check`.
