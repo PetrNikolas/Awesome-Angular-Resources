@@ -2,8 +2,8 @@
 
 ## Project Overview
 
-Awesome Angular Resources is a documentation-only repository. Its primary artifact is
-the curated catalog in `README.md`; do not add application code, package managers,
+Awesome Angular Resources is a documentation-only repository. Its primary artifact
+is the curated catalog in `README.md`; do not add application code, package managers,
 build tooling, generated sites, or dependency lockfiles.
 
 ## Repository Map
@@ -23,7 +23,14 @@ build tooling, generated sites, or dependency lockfiles.
 - Keep duplicate entries when they intentionally belong to different top-level
   categories.
 - Reuse existing Resource types instead of inventing near-duplicates.
-- Verify new or changed external URLs when network access is available.
+- Include only current, actively maintained projects. Remove an entry when its
+  canonical source is archived, explicitly deprecated or unmaintained, or tied to
+  an unsupported Angular version without a maintained release.
+- Do not classify a stable project as unmaintained solely because it has infrequent
+  commits. Confirm maintenance status from official sources and package metadata.
+- Prefer an official active successor when a resource has moved or merged.
+- Verify new or changed external URLs and maintenance status when network access
+  is available.
 - Keep descriptions factual and concise; do not invent missing details.
 
 ## Change Guidelines
@@ -40,6 +47,8 @@ build tooling, generated sites, or dependency lockfiles.
 - Run `git diff --check`.
 - Count entries in each affected README section and confirm no existing entry was
   accidentally lost or duplicated.
+- For maintenance audits, record the official archive, deprecation, migration, or
+  supported-version evidence used for each removal or replacement.
 - For catalog-wide conversions, compare titles, URLs, descriptions, categories, and
   Resource types against the source evidence.
 
@@ -47,5 +56,6 @@ build tooling, generated sites, or dependency lockfiles.
 
 - Do not run destructive cleanup or history-rewriting commands.
 - Do not discard, overwrite, stage, commit, push, merge, or rebase unrelated work.
-- Do not commit, push, or open a pull request unless the user explicitly requests it.
+- Do not commit, push, or open a pull request unless the user explicitly requests
+  it.
 - Do not pull, rebase, or merge merely to complete an unrelated task.
