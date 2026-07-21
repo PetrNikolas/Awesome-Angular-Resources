@@ -2,87 +2,50 @@
 
 ## Project Overview
 
-Awesome Angular Resources is a pnpm Angular 22 application that publishes curated
-Angular resources, courses, and starter kits. The codebase is built entirely using
-standalone components and modern Angular primitives. Preserve this modern architecture
-when making changes.
-
-## Setup and Commands
-
-- Install dependencies with `pnpm install`.
-- Run the development server with `pnpm start`.
-- Run lint with `pnpm lint`.
-- Run the Jest unit suite with `pnpm test`.
-- Run end-to-end tests with `pnpm e2e` (Playwright).
-- Create a development build with `pnpm build`.
-- Create a production build with `pnpm build-prod`.
-- `pnpm ci` is mutating: it runs Prettier with `--write` before lint and tests. Do not
-  use it as a read-only verification command.
-
-Use pnpm, not npm or yarn, because `pnpm-lock.yaml` is the checked-in dependency lockfile. Do not
-edit the generated lockfile by hand.
+Awesome Angular Resources is a documentation-only repository. Its primary artifact is
+the curated catalog in `README.md`; do not add application code, package managers,
+build tooling, generated sites, or dependency lockfiles.
 
 ## Repository Map
 
-- `src/app/core/`: application shell, header, and footer.
-- `src/app/features/`: routed feature components.
-- `src/app/shared/components/`: reusable standalone UI components.
-- `src/app/shared/data/`: resource, course, and starter-kit catalogs.
-- `src/app/shared/models/`: catalog item interfaces.
-- `src/styles/`: global Sass architecture.
-- `src/environments/`: build-time environment replacements.
-- `e2e/`: legacy Protractor end-to-end tests.
-- `angular.json`: Angular builders, assets, styles, and build configurations.
-- `eslint.config.js`, `.prettierrc`, and `tsconfig.json`: lint, formatting, and
-  TypeScript rules.
+- `README.md`: public catalog with Resources, Courses, and Starter Kits sections.
+- `.github/`: GitHub automation and Copilot guidance.
+- `.codex/`, `.claude/`, `.gemini/`: AI assistant runtime configuration.
+- `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`: shared AI maintenance instructions.
+
+## Catalog Changes
+
+- Edit only the relevant section of `README.md`.
+- Keep each entry as `- [Name](URL) — concise description`.
+- Resource entries also end with their existing type as `_(type)_`.
+- Preserve existing entries and their order unless removal or reordering is explicitly
+  requested.
+- Keep duplicate entries when they intentionally belong to different top-level
+  categories.
+- Reuse existing Resource types instead of inventing near-duplicates.
+- Verify new or changed external URLs when network access is available.
+- Keep descriptions factual and concise; do not invent missing details.
 
 ## Change Guidelines
 
 - Inspect `git status` before editing and preserve unrelated user changes.
-- Make the smallest change that satisfies the task. Do not combine catalog updates or
-  bug fixes with broad Angular, dependency, testing, or styling migrations.
-- Follow the pattern in the nearest file. All components and pipes are standalone.
-- Use the configured `@core`, `@data`, `@features`, `@models`, and `@shared` aliases
-  for cross-area imports. Keep short same-area imports relative.
-- Keep components focused, use `ChangeDetectionStrategy.OnPush` where the surrounding
-  feature does, and retain Angular component class suffixes and `app-` selectors.
-- Use 2-space indentation, single quotes, semicolons, trailing ES5 commas, and a
-  120-column print width.
-- Keep component-specific Sass next to its component and shared Sass under
-  `src/styles/`. Reuse existing variables, mixins, and layout partials.
-- Avoid `any`; existing lint permits it only as a warning, not as a preferred style.
-- Do not add console logging except intentional `console.warn` or `console.error`.
-
-## Catalog Changes
-
-- Edit only the relevant file under `src/app/shared/data/`.
-- Preserve existing entries unless removal is explicitly requested.
-- Keep numeric IDs unique within the edited catalog.
-- Use fields declared by the matching model in `src/app/shared/models/`.
-- Reuse existing category values rather than inventing near-duplicates.
-- Keep entry descriptions concise and verify external URLs when network access is
-  available.
+- Make the smallest change that satisfies the task.
+- Keep Markdown readable and use one blank line around headings and lists.
+- Update these instructions and `.github/copilot-instructions.md` if the repository
+  format changes.
 
 ## Verification
 
-- Documentation or catalog-only change: inspect the diff, run `git diff --check`, and
-  run the narrowest relevant lint/build check.
-- TypeScript, template, or Sass change: run `pnpm lint` and `pnpm build`.
-- Build, routing, dependency, or production configuration change: run `pnpm lint` and
-  `pnpm build-prod`; run targeted tests when the affected test infrastructure works.
-- Test-related change: run the narrowest relevant test first, then the broader suite
-  if practical.
-
-The repository contains legacy Karma, Protractor, and dependency configuration that
-has drifted during the Angular 22 upgrade. These have been removed. The project now uses
-Jest for unit testing and Playwright for e2e testing. All build and test commands work
-correctly with pnpm.
-regression caused by the current change.
+- Inspect the complete diff.
+- Run `git diff --check`.
+- Count entries in each affected README section and confirm no existing entry was
+  accidentally lost or duplicated.
+- For catalog-wide conversions, compare titles, URLs, descriptions, categories, and
+  Resource types against the source evidence.
 
 ## Git Safety
 
 - Do not run destructive cleanup or history-rewriting commands.
-- Do not discard, overwrite, stage, commit, push, or merge unrelated work.
+- Do not discard, overwrite, stage, commit, push, merge, or rebase unrelated work.
 - Do not commit, push, or open a pull request unless the user explicitly requests it.
-- The local `master` branch can diverge from `origin/master`; do not pull, rebase, or
-  merge merely to complete an unrelated task.
+- Do not pull, rebase, or merge merely to complete an unrelated task.
