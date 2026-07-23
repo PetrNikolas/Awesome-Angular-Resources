@@ -45,6 +45,14 @@ A curated list of Angular resources, courses, and starter kits.
 - [ng-mocks](https://ng-mocks.sudo.eu/) — Angular testing library for mocking components, directives, pipes, services and facilitating TestBed setup. _(lib)_
 - [Signalstory](https://github.com/zuriscript/signalstory) — Signal-based state management for Angular with various architectural options. _(lib)_
 - [ngx-signal-state](https://github.com/simplifiedcourses/ngx-signal-state) — Opinionated simple state management library based on Angular Signals. _(lib)_
+- [RxAngular](https://www.rx-angular.io/) — Reactive extensions focused on high-performance state management, rendering, and template utilities for Angular. _(lib)_
+- [NGX Translate](https://ngx-translate.org/) — Popular internationalization library for Angular with a large ecosystem and active maintenance. _(lib)_
+- [Angular CDK](https://material.angular.dev/cdk/categories) — Behavior primitives and infrastructure for building custom Angular components. _(lib)_
+- [Angular Testing Library](https://testing-library.com/docs/angular-testing-library/intro/) — Testing utilities that encourage user-centric Angular component tests. _(lib)_
+- [Jest Preset Angular](https://github.com/thymikee/jest-preset-angular) — Jest preset and tooling for running Angular unit tests with Jest. _(tool)_
+- [Storybook for Angular](https://storybook.js.org/docs/get-started/frameworks/angular) — Component workshop for developing, documenting, and testing Angular UI components in isolation. _(tool)_
+- [Playwright](https://playwright.dev/) — Modern cross-browser end-to-end testing framework commonly used with Angular applications. _(tool)_
+- [Scully](https://scully.io/) — Static site generator for Angular applications. _(framework)_
 
 ## Courses
 
