@@ -45,6 +45,27 @@ A curated list of Angular resources, courses, and starter kits.
 - [ng-mocks](https://ng-mocks.sudo.eu/) — Angular testing library for mocking components, directives, pipes, services and facilitating TestBed setup. _(lib)_
 - [Signalstory](https://github.com/zuriscript/signalstory) — Signal-based state management for Angular with various architectural options. _(lib)_
 - [ngx-signal-state](https://github.com/simplifiedcourses/ngx-signal-state) — Opinionated simple state management library based on Angular Signals. _(lib)_
+- [RxAngular](https://www.rx-angular.io/) — Reactive extensions focused on high-performance state management, rendering, and template utilities for Angular. _(lib)_
+- [NGX Translate](https://ngx-translate.org/) — Popular internationalization library for Angular with a large ecosystem and active maintenance. _(lib)_
+- [Angular CDK](https://material.angular.dev/cdk/categories) — Behavior primitives and infrastructure for building custom Angular components. _(lib)_
+- [Angular Testing Library](https://testing-library.com/docs/angular-testing-library/intro/) — Testing utilities that encourage user-centric Angular component tests. _(lib)_
+- [Jest Preset Angular](https://github.com/thymikee/jest-preset-angular) — Jest preset and tooling for running Angular unit tests with Jest. _(tool)_
+- [Storybook for Angular](https://storybook.js.org/docs/get-started/frameworks/angular) — Component workshop for developing, documenting, and testing Angular UI components in isolation. _(tool)_
+- [Playwright](https://playwright.dev/) — Modern cross-browser end-to-end testing framework commonly used with Angular applications. _(tool)_
+- [Scully](https://scully.io/) — Static site generator for Angular applications. _(framework)_
+- [Angular Roadmap](https://angular.dev/roadmap) — Official roadmap for current and future Angular framework work. _(guide)_
+- [Angular Style Guide](https://angular.dev/style-guide) — Current official conventions and recommended practices for Angular applications. _(guide)_
+- [Keeping Angular Projects Up-to-Date](https://angular.dev/update) — Official guidance and migration resources for keeping Angular applications current. _(guide)_
+- [Angular DevTools](https://angular.dev/tools/devtools) — Browser extension for debugging and profiling Angular applications. _(tool)_
+- [Angular Language Service](https://angular.dev/tools/language-service) — Editor completions, diagnostics, hints, and navigation for Angular templates. _(tool)_
+- [Angular Aria](https://angular.dev/guide/aria/overview) — Headless accessible directives implementing common WAI-ARIA interaction patterns. _(lib)_
+- [Angular Signal Forms](https://angular.dev/guide/forms/signals/overview) — Signal-based, type-safe APIs for building and validating forms. _(guide)_
+- [Angular httpResource](https://angular.dev/guide/http/http-resource) — Reactive signal-based HTTP data fetching built on top of HttpClient. _(guide)_
+- [Zoneless Angular](https://angular.dev/guide/zoneless) — Official guide to running Angular without ZoneJS. _(guide)_
+- [Angular AI](https://angular.dev/ai) — Official resources for building AI-powered applications and developing Angular with AI-assisted tooling. _(guide)_
+- [Vitest](https://vitest.dev/) — Modern unit test runner used by default in new Angular CLI projects. _(tool)_
+- [spartan/ui](https://www.spartan.ng/) — Accessible and customizable Angular UI primitives built with signals, SSR, and zoneless support. _(lib)_
+- [Apollo Angular](https://the-guild.dev/graphql/apollo-angular) — Production-ready GraphQL client integration for Angular applications. _(lib)_
 
 ## Courses
 
