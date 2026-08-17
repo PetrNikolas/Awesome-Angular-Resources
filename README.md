@@ -66,6 +66,8 @@ A curated list of Angular resources, courses, and starter kits.
 - [Vitest](https://vitest.dev/) — Modern unit test runner used by default in new Angular CLI projects. _(tool)_
 - [spartan/ui](https://www.spartan.ng/) — Accessible and customizable Angular UI primitives built with signals, SSR, and zoneless support. _(lib)_
 - [Apollo Angular](https://the-guild.dev/graphql/apollo-angular) — Production-ready GraphQL client integration for Angular applications. _(lib)_
+- [Angular Architects Module Federation](https://github.com/angular-architects/module-federation-plugin) — Angular tooling for building and integrating microfrontends with Module Federation. _(tool)_
+- [ngxtension](https://ngxtension.dev/) — Tree-shakeable utilities for modern Angular development, including signals, forms, effects, and DOM helpers. _(lib)_
 
 ## Courses
 
