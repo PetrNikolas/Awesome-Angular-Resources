@@ -69,6 +69,9 @@ A curated list of Angular resources, courses, and starter kits.
 - [Angular Architects Module Federation](https://github.com/angular-architects/module-federation-plugin) — Angular tooling for building and integrating microfrontends with Module Federation. _(tool)_
 - [ngxtension](https://ngxtension.dev/) — Tree-shakeable utilities for modern Angular development, including signals, forms, effects, and DOM helpers. _(lib)_
 
+- [Angular Auth OIDC Client](https://github.com/damienbod/angular-auth-oidc-client) — OpenID Connect and OAuth 2.0 client library for Angular applications, including PKCE, refresh tokens, guards, and interceptors. _(lib)_
+- [Form.io Angular](https://github.com/formio/angular) — JSON-powered form renderer and form management library for Angular applications. _(lib)_
+- [UI-Router for Angular](https://github.com/ui-router/angular) — State-based routing framework for Angular 2+ applications with hierarchical states and routing. _(lib)_
 ## Courses
 
 - [Ultimate Courses](https://ultimatecourses.com/) — Superb quality courses for web developers
