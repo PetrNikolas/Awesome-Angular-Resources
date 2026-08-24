@@ -72,6 +72,8 @@ A curated list of Angular resources, courses, and starter kits.
 - [Angular Auth OIDC Client](https://github.com/damienbod/angular-auth-oidc-client) — OpenID Connect and OAuth 2.0 client library for Angular applications, including PKCE, refresh tokens, guards, and interceptors. _(lib)_
 - [Form.io Angular](https://github.com/formio/angular) — JSON-powered form renderer and form management library for Angular applications. _(lib)_
 - [UI-Router for Angular](https://github.com/ui-router/angular) — State-based routing framework for Angular 2+ applications with hierarchical states and routing. _(lib)_
+- [NgRx Toolkit](https://github.com/ngrx-toolkit/ngrx-toolkit) — Extensions for the NgRx Signal Store including DevTools, storage sync, data services, undo/redo and more. _(lib)_
+- [RxDB](https://rxdb.info/) — Reactive local-first database for JavaScript with Angular support, offline capabilities and real-time replication. _(lib)_
 ## Courses
 
 - [Ultimate Courses](https://ultimatecourses.com/) — Superb quality courses for web developers
