@@ -1,5 +1,4 @@
 # Awesome Angular Resources
-
 A curated list of Angular resources, courses, and starter kits.
 
 ## Resources
@@ -55,6 +54,7 @@ A curated list of Angular resources, courses, and starter kits.
 - [Scully](https://scully.io/) — Static site generator for Angular applications. _(framework)_
 - [Angular Server-side and Hybrid Rendering](https://angular.dev/guide/ssr) — Official guide to SSR, prerendering (SSG), and client-side rendering in Angular. _(guide)_
 - [Angular Roadmap](https://angular.dev/roadmap) — Official roadmap for current and future Angular framework work. _(guide)_
+- [Angular Blog](https://blog.angular.dev/) — Official news, release announcements, and tips from the Angular team. _(guide)_
 - [Angular Style Guide](https://angular.dev/style-guide) — Current official conventions and recommended practices for Angular applications. _(guide)_
 - [Keeping Angular Projects Up-to-Date](https://angular.dev/update) — Official guidance and migration resources for keeping Angular applications current. _(guide)_
 - [Angular DevTools](https://angular.dev/tools/devtools) — Browser extension for debugging and profiling Angular applications. _(tool)_
@@ -81,5 +81,4 @@ A curated list of Angular resources, courses, and starter kits.
 - [Ultimate Courses](https://ultimatecourses.com/) — Superb quality courses for web developers
 
 ## Starter Kits
-
 No actively maintained starter kits are currently listed.
