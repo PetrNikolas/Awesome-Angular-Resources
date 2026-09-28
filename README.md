@@ -1,4 +1,5 @@
 # Awesome Angular Resources
+
 A curated list of Angular resources, courses, and starter kits.
 
 ## Resources
@@ -18,7 +19,8 @@ A curated list of Angular resources, courses, and starter kits.
 - [Ignite UI for Angular](https://www.infragistics.com/products/ignite-ui-angular) — 50+ Material-based UI components designed and built on Google's Angular framework _(lib)_
 - [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) — Professional Grade Angular UI Components _(lib)_
 - [NGX-Bootstrap](https://valor-software.com/ngx-bootstrap) — Bootstrap components, powered by Angular _(lib)_
-- [Compodoc](https://compodoc.app/) — The missing documentation tool for your Angular application _(tool)_
+- [Compodoc](https://compodoc.app/) — The
+ missing documentation tool for your Angular application _(tool)_
 - [NGRX](https://ngrx.io/) — Reactive State for Angular _(lib)_
 - [AG Grid](https://www.ag-grid.com/angular-data-grid/getting-started/) — ag-Grid is a feature-rich data grid built for Angular. _(lib)_
 - [AngularFire](https://github.com/angular/angularfire) — The official library for Firebase and Angular _(lib)_
@@ -33,7 +35,8 @@ A curated list of Angular resources, courses, and starter kits.
 - [ngx-order-pipe](https://github.com/VadimDez/ngx-order-pipe) — Angular pipe for sorting collections. _(lib)_
 - [Angular.love](https://angular.love/) — Angular articles, guides, news, and community resources. _(community)_
 - [NestJS](https://nestjs.com) — NodeJS framework built on Express, but heavily inspired by Angular. Beautifully completes Angular frontend into full-stack Angular-like application _(framework)_
-- [ngx-scrolltop](https://github.com/bartholomej/ngx-scrolltop) — Lightweight, Material Design inspired button for go-to-top of the page. No dependencies. Pure Angular! _(lib)_
+- [ngx-scrolltop](https://github.com/bartholomej/ngx-scrolltop) — Lightweight, Material Design inspired button for go-to-
+top of the page. No dependencies. Pure Angular! _(lib)_
 - [Taiga UI](https://taiga-ui.dev) — Powerful set of open source components for Angular _(lib)_
 - [Analog](https://analogjs.org) — The fullstack meta-framework for Angular _(framework)_
 - [ngx-formly](https://formly.dev) — JSON powered / Dynamic forms for Angular _(lib)_
@@ -48,7 +51,8 @@ A curated list of Angular resources, courses, and starter kits.
 - [NGX Translate](https://ngx-translate.org/) — Popular internationalization library for Angular with a large ecosystem and active maintenance. _(lib)_
 - [Angular CDK](https://material.angular.dev/cdk/categories) — Behavior primitives and infrastructure for building custom Angular components. _(lib)_
 - [Angular Testing Library](https://testing-library.com/docs/angular-testing-library/intro/) — Testing utilities that encourage user-centric Angular component tests. _(lib)_
-- [Jest Preset Angular](https://github.com/thymikee/jest-preset-angular) — Jest preset and tooling for running Angular unit tests with Jest. _(tool)_
+- [Jest Preset Angular](https
+://github.com/thymikee/jest-preset-angular) — Jest preset and tooling for running Angular unit tests with Jest. _(tool)_
 - [Storybook for Angular](https://storybook.js.org/docs/get-started/frameworks/angular) — Component workshop for developing, documenting, and testing Angular UI components in isolation. _(tool)_
 - [Playwright](https://playwright.dev/) — Modern cross-browser end-to-end testing framework commonly used with Angular applications. _(tool)_
 - [Scully](https://scully.io/) — Static site generator for Angular applications. _(framework)_
@@ -62,7 +66,8 @@ A curated list of Angular resources, courses, and starter kits.
 - [Angular Signal Forms](https://angular.dev/guide/forms/signals/overview) — Signal-based, type-safe APIs for building and validating forms. _(guide)_
 - [Angular httpResource](https://angular.dev/guide/http/http-resource) — Reactive signal-based HTTP data fetching built on top of HttpClient. _(guide)_
 - [Zoneless Angular](https://angular.dev/guide/zoneless) — Official guide to running Angular without ZoneJS. _(guide)_
-- [Angular AI](https://angular.dev/ai) — Official resources for building AI-powered applications and developing Angular with AI-assisted tooling. _(guide)_
+- [Angular A
+I](https://angular.dev/ai) — Official resources for building AI-powered applications and developing Angular with AI-assisted tooling. _(guide)_
 - [Angular Agent Skills](https://angular.dev/ai/agent-skills) — Official, regularly updated skills that provide Angular-specific coding, architecture, and project-scaffolding guidance for agentic development tools. _(guide)_
 - [Vitest](https://vitest.dev/) — Modern unit test runner used by default in new Angular CLI projects. _(tool)_
 - [spartan/ui](https://www.spartan.ng/) — Accessible and customizable Angular UI primitives built with signals, SSR, and zoneless support. _(lib)_
@@ -74,10 +79,12 @@ A curated list of Angular resources, courses, and starter kits.
 - [Form.io Angular](https://github.com/formio/angular) — JSON-powered form renderer and form management library for Angular applications. _(lib)_
 - [UI-Router for Angular](https://github.com/ui-router/angular) — State-based routing framework for Angular 2+ applications with hierarchical states and routing. _(lib)_
 - [NgRx Toolkit](https://github.com/ngrx-toolkit/ngrx-toolkit) — Extensions for the NgRx Signal Store including DevTools, storage sync, data services, undo/redo and more. _(lib)_
-- [RxDB](https://rxdb.info/) — Reactive local-first database for JavaScript with Angular support, offline capabilities and real-time replication. _(lib)_
+- [RxDB](https://rxdb.info/) — Reactive local-first database for JavaScript with Angular support, offline capabilities and real-time replication. _(li
+b)_
 ## Courses
 
 - [Ultimate Courses](https://ultimatecourses.com/) — Superb quality courses for web developers
 
 ## Starter Kits
+
 No actively maintained starter kits are currently listed.
