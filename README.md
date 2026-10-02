@@ -85,4 +85,3 @@ A curated list of Angular resources, courses, and starter kits.
 ## Starter Kits
 
 No actively maintained starter kits are currently listed.
-- 💚 Bound the authority of automated agents - treat coding and operations agents as principals with explicit identity, least privilege, and human approval for irreversible actions.
