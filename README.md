@@ -66,6 +66,7 @@ A curated list of Angular resources, courses, and starter kits.
 - [Zoneless Angular](https://angular.dev/guide/zoneless) — Official guide to running Angular without ZoneJS. _(guide)_
 - [Angular AI](https://angular.dev/ai) — Official resources for building AI-powered applications and developing Angular with AI-assisted tooling. _(guide)_
 - [Angular Agent Skills](https://angular.dev/ai/agent-skills) — Official, regularly updated skills that provide Angular-specific coding, architecture, and project-scaffolding guidance for agentic development tools. _(guide)_
+- [Angular CLI MCP Server](https://angular.dev/ai/mcp) — Official Model Context Protocol server bundled with the Angular CLI for workspace analysis, documentation search, builds, tests, and dev-server control in agentic coding tools. _(tool)_
 - [Vitest](https://vitest.dev/) — Modern unit test runner used by default in new Angular CLI projects. _(tool)_
 - [spartan/ui](https://www.spartan.ng/) — Accessible and customizable Angular UI primitives built with signals, SSR, and zoneless support. _(lib)_
 - [Apollo Angular](https://the-guild.dev/graphql/apollo-angular) — Production-ready GraphQL client integration for Angular applications. _(lib)_
