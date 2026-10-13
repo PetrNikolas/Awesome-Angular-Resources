@@ -79,6 +79,8 @@ A curated list of Angular resources, courses, and starter kits.
 - [UI-Router for Angular](https://github.com/ui-router/angular) — State-based routing framework for Angular 2+ applications with hierarchical states and routing. _(lib)_
 - [NgRx Toolkit](https://github.com/ngrx-toolkit/ngrx-toolkit) — Extensions for the NgRx Signal Store including DevTools, storage sync, data services, undo/redo and more. _(lib)_
 - [RxDB](https://rxdb.info/) — Reactive local-first database for JavaScript with Angular support, offline capabilities and real-time replication. _(lib)_
+- [Angular WebMCP](https://angular.dev/ai/webmcp) — Experimental Angular APIs for exposing application capabilities as structured tools to browser-based AI agents; the specification and APIs may change. _(guide)_
+
 ## Courses
 
 - [Ultimate Courses](https://ultimatecourses.com/) — Superb quality courses for web developers
