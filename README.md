@@ -57,6 +57,7 @@ A curated list of Angular resources, courses, and starter kits.
 - [Angular Roadmap](https://angular.dev/roadmap) — Official roadmap for current and future Angular framework work. _(guide)_
 - [Angular Blog](https://blog.angular.dev/) — Official news, release announcements, and tips from the Angular team. _(guide)_
 - [Angular Style Guide](https://angular.dev/style-guide) — Current official conventions and recommended practices for Angular applications. _(guide)_
+- [Angular Security Best Practices](https://angular.dev/best-practices/security) — Official guidance on XSS prevention, sanitization, Content Security Policy, and Trusted Types. _(guide)_
 - [Angular Tailwind CSS](https://angular.dev/guide/tailwind) — Official guide for integrating Tailwind CSS with Angular projects via CLI and PostCSS. _(guide)_
 - [Keeping Angular Projects Up-to-Date](https://angular.dev/update) — Official guidance and migration resources for keeping Angular applications current. _(guide)_
 - [Angular DevTools](https://angular.dev/tools/devtools) — Browser extension for debugging and profiling Angular applications. _(tool)_
