@@ -52,7 +52,6 @@ A curated list of Angular resources, courses, and starter kits.
 - [Jest Preset Angular](https://github.com/thymikee/jest-preset-angular) — Jest preset and tooling for running Angular unit tests with Jest. _(tool)_
 - [Storybook for Angular](https://storybook.js.org/docs/get-started/frameworks/angular) — Component workshop for developing, documenting, and testing Angular UI components in isolation. _(tool)_
 - [Playwright](https://playwright.dev/) — Modern cross-browser end-to-end testing framework commonly used with Angular applications. _(tool)_
-- [Scully](https://scully.io/) — Static site generator for Angular applications. _(framework)_
 - [Angular Server-side and Hybrid Rendering](https://angular.dev/guide/ssr) — Official guide to SSR, prerendering (SSG), and client-side rendering in Angular. _(guide)_
 - [Angular Roadmap](https://angular.dev/roadmap) — Official roadmap for current and future Angular framework work. _(guide)_
 - [Angular Blog](https://blog.angular.dev/) — Official news, release announcements, and tips from the Angular team. _(guide)_
